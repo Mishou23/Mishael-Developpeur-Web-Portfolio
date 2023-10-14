@@ -1,0 +1,24 @@
+.Tech-container{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 84px;
+    align-items: center;
+    padding-top: 70px;
+}
+span{
+    padding-left: 10px;
+}
+.title{
+    font-weight: bold;
+    font-size: 16px;
+}
+.all-icons{
+    display: flex;
+}
+.icon{
+    padding-left: 25px;
+}
+.icon i{
+    font-size: 22px;
+    color: #ff2079;
+}

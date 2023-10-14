@@ -1,0 +1,34 @@
+.introContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 75vh; 
+    gap: 20px;
+}
+.content{
+    gap: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.intro-text{
+    font-family: 'orbitron';
+}
+h1{
+    font-weight: bold;
+    font-size: 33px;
+    font-family: 'Expletus Sans';
+}
+.icons-links{
+    display: flex;
+}
+.gitLink{
+    padding-left: 8px;
+}
+.icons-links a{
+    font-size: 22px;
+}
+.myPhoto img{
+    width: 42vh;
+    height: 41vh;
+border-radius: 50%;
+}
