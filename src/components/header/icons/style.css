@@ -1,14 +1,14 @@
 .Tech-container{
     display: flex;
     justify-content: space-between;
-    padding-right: 84px;
-    align-items: center;
-    padding-top: 70px;
+    padding-right: 52px;
+    padding-top: 40px;
 }
 span{
     padding-left: 10px;
+    font-size: 23px;
 }
-.title{
+.title p{
     font-weight: bold;
     font-size: 16px;
 }
@@ -18,7 +18,7 @@ span{
 .icon{
     padding-left: 25px;
 }
-.icon i{
-    font-size: 22px;
-    color: #ff2079;
+.icon img{
+    width: 33px;
+    height: 32px;
 }

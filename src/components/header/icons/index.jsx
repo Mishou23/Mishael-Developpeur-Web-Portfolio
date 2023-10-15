@@ -1,5 +1,12 @@
 import React from 'react';
 import './style.css';
+// Import the SVGs
+import HtmlIcon from '../../../assets/svg/html.svg';
+import CssIcon from '../../../assets/svg/css.svg';
+import JsIcon from '../../../assets/svg/js.svg';
+import NodeJsIcon from '../../../assets/svg/nodejs.svg';
+import ReactIcon from '../../../assets/svg/reactjs.svg';
+import SassIcon from '../../../assets/svg/sass.svg';
 
 export default function Icons() {
   return (
@@ -9,22 +16,22 @@ export default function Icons() {
       </div>
       <div className='all-icons'>
         <div className="icon">
-          <i className="fab fa-html5"></i>
+          <img src={HtmlIcon} alt="HTML" />
         </div>
         <div className="icon">
-          <i className="fab fa-js"></i>
+          <img src={JsIcon} alt="JavaScript" />
         </div>
         <div className="icon">
-          <i className="fab fa-css3"></i>
+          <img src={CssIcon} alt="CSS" />
         </div>
         <div className="icon">
-          <i className="fab fa-sass"></i>
+          <img src={SassIcon} alt="Sass" />
         </div>
         <div className="icon">
-          <i className="fab fa-react"></i>
+          <img src={ReactIcon} alt="React" />
         </div>
         <div className="icon">
-          <i className="fab fa-node"></i>
+          <img src={NodeJsIcon} alt="Node.js" />
         </div>
       </div>
     </div>

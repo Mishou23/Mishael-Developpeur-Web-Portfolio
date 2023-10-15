@@ -9,9 +9,12 @@
     gap: 15px;
     display: flex;
     flex-direction: column;
+    padding-top: 100px;
 }
 .intro-text{
     font-family: 'orbitron';
+    line-height: 29px;
+    letter-spacing: 2px;
 }
 h1{
     font-weight: bold;
