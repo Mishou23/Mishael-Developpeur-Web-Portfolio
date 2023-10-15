@@ -2,7 +2,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 75vh; 
+   height: 88vh; 
     gap: 20px;
 }
 .content{
@@ -15,10 +15,12 @@
     font-family: 'orbitron';
     line-height: 29px;
     letter-spacing: 2px;
+    color: white;
 }
 h1{
     font-weight: bold;
     font-size: 33px;
+    color: #ff2079;
     font-family: 'Expletus Sans';
 }
 .icons-links{
@@ -28,7 +30,7 @@ h1{
     padding-left: 8px;
 }
 .icons-links a{
-    font-size: 22px;
+    font-size: 30px;
 }
 .myPhoto img{
     width: 42vh;

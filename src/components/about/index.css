@@ -1,0 +1,30 @@
+.aboutContainer{
+    padding: 0px 225px;
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #fffbf7;
+ 
+}
+.containAll{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+}
+.about-title h2{
+font-family: 'Expletus Sans';
+color: #ff2079;
+}
+.about-text{
+    padding-top: 10px;
+}
+.about-text p{
+    line-height: 22px;
+}
+.imgContainer img{
+    width: 360px;
+    height: 266px;
+}
