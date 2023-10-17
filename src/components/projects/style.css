@@ -1,0 +1,50 @@
+.projectContainer{
+     background-image: url('../../assets/images/background.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+     background-repeat: no-repeat;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.all-projects{
+    padding-top: 20px;
+}
+.project{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.title h2{
+   color: #ff2079;
+   text-align: center ;
+   padding-bottom: 15px;
+   font-family: 'Expletus Sans';
+}
+.title-des{
+    color: #E92EB9;
+    padding-bottom: 10px;
+    font-family: 'orbitron';
+    letter-spacing: 4px;
+}
+.proj-title{
+    color: #ff2079;
+    font-family: 'Expletus Sans';
+}
+.proj-des{
+    color: white;
+}
+.proj-image img{
+    width: 300px;
+    height: 300px;
+}
+.proj-links{
+    display: flex;
+    gap: 10px;
+    padding-top: 10px;
+}
+ .demo-link a{
+    text-decoration: none;
+    color: white
+}

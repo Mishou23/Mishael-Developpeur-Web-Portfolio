@@ -2,10 +2,10 @@ import './index.css';
 import Coding from '../../assets/images/web-developer-coding-img.jpg'
 export default function AboutMe(){
     return(
-        <section className='aboutContainer'>
+        <section className='aboutContainer'  id='a-propos'>
         <div className='containAll'>
         <article className='aboutContent'>
-        <div className='about-title' id='a-propos'>
+        <div className='about-title'>
         <h2>A propos de moi</h2>
         </div>
         <div className='about-text'>
