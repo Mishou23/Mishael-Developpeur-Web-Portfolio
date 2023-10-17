@@ -1,50 +1,56 @@
-.projectContainer{
-     background-image: url('../../assets/images/background.jpg'); 
-    background-size: cover; 
-    background-position: center; 
-     background-repeat: no-repeat;  
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
+.projectContainer {
+  background-image: url("../../assets/images/background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding-top: 30px;
 }
-.all-projects{
-    padding-top: 20px;
+.all-projects {
+  padding-top: 20px;
 }
-.project{
-    display: flex;
-    justify-content: center;
-    gap: 15px;
+.project {
+  display: flex;
+  justify-content: start;
+  gap: 15px;
+  padding-bottom: 50px;
 }
-.title h2{
-   color: #ff2079;
-   text-align: center ;
-   padding-bottom: 15px;
-   font-family: 'Expletus Sans';
+.title h2 {
+  color: #ff2079;
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 15px;
+  font-family: "Expletus Sans";
 }
-.title-des{
-    color: #E92EB9;
-    padding-bottom: 10px;
-    font-family: 'orbitron';
-    letter-spacing: 4px;
+.title-des {
+  color: #e92eb9;
+  padding-bottom: 10px;
+  font-family: "orbitron";
+  letter-spacing: 4px;
 }
-.proj-title{
-    color: #ff2079;
-    font-family: 'Expletus Sans';
+.proj-title {
+  color: #ff2079;
+  font-family: "Expletus Sans";
 }
-.proj-des{
-    color: white;
+.project.directSwitch {
+  justify-content: end;
 }
-.proj-image img{
-    width: 300px;
-    height: 300px;
+.proj-des {
+  color: white;
 }
-.proj-links{
-    display: flex;
-    gap: 10px;
-    padding-top: 10px;
+.proj-image img {
+  width: 450px;
+  height: auto;
 }
- .demo-link a{
-    text-decoration: none;
-    color: white
+.proj-links {
+  display: flex;
+  gap: 10px;
+  padding-top: 10px;
+}
+.demo-link a {
+  text-decoration: none;
+  color: white;
 }
