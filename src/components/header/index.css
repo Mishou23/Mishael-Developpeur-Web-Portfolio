@@ -23,7 +23,7 @@
   line-height: 29px;
   letter-spacing: 2px;
   color: white;
- font-size: 18px;
+  font-size: 18px;
 }
 
 .introTitle {
@@ -38,7 +38,7 @@
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
-  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
+  animation: typewriterLoop 8s infinite normal;
 }
 
 .icons-links {
@@ -68,12 +68,15 @@
 }
 
 /* Animation */
-@keyframes typewriter {
-  from {
+@keyframes typewriterLoop {
+  0%, 100% {
     width: 0;
   }
-  to {
+  25%, 75% {
     width: 20.5em;
+  }
+  100% {
+    width: 0;
   }
 }
 

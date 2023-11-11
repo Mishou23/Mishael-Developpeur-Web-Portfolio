@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
 import i18n from '../../i18n';
 import Logo from '../../assets/images/logo_img.png';
@@ -6,10 +6,10 @@ import './index.css';
 
 export default function Navbar() {
   const { t } = useTranslation();
+  const [isFixed, setIsFixed] = useState(false);
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-    
   };
 
   const handleScroll = (targetId) => {
@@ -19,8 +19,21 @@ export default function Navbar() {
     }
   };
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrolled = window.scrollY > window.innerHeight;
+      setIsFixed(scrolled);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
-    <nav>
+    <nav className={`${isFixed ? 'fixed' : ''}`}>
       <div className="container-nav">
         <div className="imageContainer">
           <img src={Logo} alt="Logo" />

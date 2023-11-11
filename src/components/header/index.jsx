@@ -14,7 +14,7 @@ export default function Intro() {
         <div className='introTitle'>
           <h1>{t('IntroTitle')}</h1>
         </div>
-        <div className='intro-text'>
+        <div data-aos="fade-right"  data-aos-duration="1500" className='intro-text'>
           <p>{t('IntroText')}</p>
         </div>
         <div className='icons-links'>
