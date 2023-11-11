@@ -1,6 +1,6 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-import i18n from '../../i18n'; 
+import i18n from '../../i18n';
 import Logo from '../../assets/images/logo_img.png';
 import './index.css';
 
@@ -9,6 +9,13 @@ export default function Navbar() {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+  };
+
+  const handleScroll = (targetId) => {
+    const targetElement = document.getElementById(targetId);
+    if (targetElement) {
+      targetElement.scrollIntoView({ behavior: 'smooth' });
+    }
   };
 
   return (
@@ -20,22 +27,30 @@ export default function Navbar() {
         <ul>
           <li>
             <div>
-              <a href="#accueil">{t('Accueil')}</a>
+              <a href="#accueil" onClick={() => handleScroll('accueil')}>
+                {t('Accueil')}
+              </a>
             </div>
           </li>
           <li>
             <div>
-              <a href="#a-propos">{t('A propos')}</a>
+              <a href="#a-propos" onClick={() => handleScroll('a-propos')}>
+                {t('A propos')}
+              </a>
             </div>
           </li>
           <li>
             <div>
-              <a href="#portfolio">{t('Portfolio')}</a>
+              <a href="#portfolio" onClick={() => handleScroll('portfolio')}>
+                {t('Portfolio')}
+              </a>
             </div>
           </li>
           <li>
             <div>
-              <a href="#contact">{t('Contact')}</a>
+              <a href="#contact" onClick={() => handleScroll('contact')}>
+                {t('Contact')}
+              </a>
             </div>
           </li>
           <li className="translateEng" onClick={() => changeLanguage('en')}>
@@ -49,7 +64,7 @@ export default function Navbar() {
           <li className="translateFr" onClick={() => changeLanguage('fr')}>
             <span>
               <img
-                  src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAbFBMVEVzldTg4ODS0tLxDwDtAwDjAADD0uz39/fy8vL3k4nzgna4yOixwuXu7u7s6+zn5+fyd2rvcGPtZljYAABrjNCpvOHrWkxegsqfs93NAADpUUFRd8THAABBa7wnVbERRKa8vLyxsLCoqKigoKClCvcsAAAAXklEQVR4AS3JxUEAQQAEwZo13Mk/R9w5/7UERJCIGIgj5qfRJZEpPyNfCgJTjMR1eRRnJiExFJz5Mf1PokWr/UztIjRGQ3V486u0HO55m634U6dMcf0RNPfkVCTvKjO16xHA8miowAAAAABJRU5ErkJggg=="
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAbFBMVEVzldTg4ODS0tLxDwDtAwDjAADD0uz39/fy8vL3k4nzgna4yOixwuXu7u7s6+zn5+fyd2rvcGPtZljYAABrjNCpvOHrWkxegsqfs93NAADpUUFRd8THAABBa7wnVbERRKa8vLyxsLCoqKigoKClCvcsAAAAXklEQVR4AS3JxUEAQQAEwZo13Mk/R9w5/7UERJCIGIgj5qfRJZEpPyNfCgJTjMR1eRRnJiExFJz5Mf1PokWr/UztIjRGQ3V486u0HO55m634U6dMcf0RNPfkVCTvKjO16xHA8miowAAAAABJRU5ErkJggg=="
                 alt="Français"
               />
             </span>
