@@ -1,48 +1,87 @@
-.introContainer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-   height: 88vh; 
-    gap: 20px;
-    position: relative;
-    z-index: 2;
+/* Google Fonts */
+@import url(https://fonts.googleapis.com/css?family=Anonymous+Pro);
+
+.introContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 88vh;
+  gap: 20px;
+  position: relative;
+  z-index: 2;
 }
-.content{
-    gap: 15px;
-    display: flex;
-    flex-direction: column;
-    padding-top: 100px;
+
+.content {
+  gap: 15px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 100px;
 }
-.intro-text{
-    font-family: 'orbitron';
-    line-height: 29px;
-    letter-spacing: 2px;
-    color: white;
+
+.intro-text {
+  font-family: 'orbitron';
+  line-height: 29px;
+  letter-spacing: 2px;
+  color: white;
+ font-size: 18px;
 }
-h1{
-    font-weight: bold;
-    font-size: 33px;
-    color: #ff2079;
-    font-family: 'Expletus Sans';
+
+.introTitle {
+  font-weight: bold;
+  color: #ff2079;
+  font-family: 'Expletus Sans';
+  /* typewriter animation */
+  position: relative;
+  top: 50%;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-size: 128%;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);
+  animation: typewriter 4s steps(44) 1s 1 normal both, blinkTextCursor 500ms steps(44) infinite normal;
 }
-.icons-links{
-    display: flex;
+
+.icons-links {
+  display: flex;
 }
-.gitLink{
-    padding-left: 12px;
+
+.gitLink {
+  padding-left: 12px;
 }
-.icons-links a i{
-    font-size: 30px;
-    color: #e92efb;
-    transition: 2s ease-in;
+
+.icons-links a i {
+  font-size: 30px;
+  color: #e92efb;
+  transition: 2s ease-in;
 }
-.icons-links a i:hover{
-    transform: scale(1.2);
-    color: #ff2079;
-    transition: 0.5s ease-out;
+
+.icons-links a i:hover {
+  transform: scale(1.2);
+  color: #ff2079;
+  transition: 0.5s ease-out;
 }
-.myPhoto img{
-    width: 42vh;
-    height: 41vh;
-border-radius: 50%;
+
+.myPhoto img {
+  width: 42vh;
+  height: 41vh;
+  border-radius: 50%;
+}
+
+/* Animation */
+@keyframes typewriter {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20.5em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
 }
