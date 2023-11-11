@@ -1,17 +1,20 @@
 import React from 'react';
+import { useTranslation } from 'react-i18next';
 import './style.css';
 import ImageSlider from './ImageSlider/index';
 import projectData from './ProjectData/index';
 
 export default function Projects() {
+  const { t } = useTranslation();
+
   return (
     <section className="projectContainer" id="portfolio">
       <div className="all-proj-content">
         <div className="title">
-          <h2>Portfolio</h2>
+          <h2>{t('PortfolioTitle')}</h2>
         </div>
         <div className="title-des">
-          <h3>Chaque projet constitue un développement unique en son genre</h3>
+          <h3>{t('PortfolioDescription')}</h3>
         </div>
         <section className="all-projects">
           {projectData.map((project, index) => (
@@ -21,10 +24,10 @@ export default function Projects() {
               </div>
               <div className="proj-content">
                 <div className="proj-title">
-                  <h4>{project.title}</h4>
+                  <h4>{t(`Project${project.id}Title`)}</h4>
                 </div>
                 <div className="proj-des">
-                  <p>{project.description}</p>
+                  <p>{t(`Project${project.id}Description`)}</p>
                 </div>
                 <div className="proj-links">
                   <div className="link">

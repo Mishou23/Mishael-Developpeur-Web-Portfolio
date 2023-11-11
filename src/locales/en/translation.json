@@ -6,6 +6,14 @@
     "IntroTitle": "React FrontEnd Developer",
     "IntroText": "Hello, I'm Mishael, and I love Web Development. I live in Paris, France.",
     "AboutTitle": "About Me",
-    "AboutText": "As a web developer specialized in frontend development, I have a strong expertise in a range of languages and technologies, including HTML, CSS, JavaScript, SCSS, Node.js, and React.js. My experience allows me to design attractive web layouts while optimizing sites for an excellent user experience on all devices. My goal is to create responsive interfaces that ensure smooth navigation. I am ready to apply my skills to contribute meaningfully to your frontend development team."
+    "AboutText": "As a web developer specialized in frontend development, I have a strong expertise in a range of languages and technologies, including HTML, CSS, JavaScript, SCSS, Node.js, and React.js. My experience allows me to design attractive web layouts while optimizing sites for an excellent user experience on all devices. My goal is to create responsive interfaces that ensure smooth navigation. I am ready to apply my skills to contribute meaningfully to your frontend development team.",
+    "PortfolioTitle": "Portfolio",
+    "PortfolioDescription": "Each project is a unique development in its own right",
+    "Project1Title": "Portfolio Architect Sophie Blue",
+    "Project1Description": "lores",
+    "Project2Title": "Kasa Project",
+    "Project2Description": "This project involves discovering the React framework and managing routes with React-router by integrating the provided Figma mockups. Housing listings come from a JSON file.",
+    "Project3Title": "Project Title 3",
+    "Project3Description": "Description for Project 3"
   }
   
