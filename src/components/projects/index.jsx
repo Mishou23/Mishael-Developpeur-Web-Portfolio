@@ -1,6 +1,7 @@
 import React from 'react';
-import "./style.css";
-import projectData from './ProjectData/index'; 
+import './style.css';
+import ImageSlider from './ImageSlider/index';
+import projectData from './ProjectData/index';
 
 export default function Projects() {
   return (
@@ -14,9 +15,9 @@ export default function Projects() {
         </div>
         <section className="all-projects">
           {projectData.map((project, index) => (
-            <article className={`project ${index % 2 === 0 ? 'directSwitch' : ''}`} key={index}>
+            <div className={`project ${index % 2 === 0 ? 'directSwitch' : ''}`} key={index}>
               <div className="proj-image">
-                <img src={project.image} alt="portfolio d'architecte" />
+                <ImageSlider images={project.images} />
               </div>
               <div className="proj-content">
                 <div className="proj-title">
@@ -27,16 +28,18 @@ export default function Projects() {
                 </div>
                 <div className="proj-links">
                   <div className="link">
-                    <a href={project.githubLink} target="_blank">
+                    <a href={project.githubLink} target="_blank" rel="noopener noreferrer">
                       <i className="fa-brands fa-github"></i>
                     </a>
                   </div>
                   <div className="demo-link">
-                    <a href={project.liveDemoLink}>Live Demo</a>
+                    <a href={project.liveDemoLink} target="_blank" rel="noopener noreferrer">
+                      Live Demo
+                    </a>
                   </div>
                 </div>
               </div>
-            </article>
+            </div>
           ))}
         </section>
       </div>
