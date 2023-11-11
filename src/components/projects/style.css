@@ -8,6 +8,7 @@
   justify-content: center;
   height: 100%;
   padding-left: 50px;
+  padding-right: 50px;
   padding-top: 50px;
 }
 .all-projects {
@@ -52,14 +53,29 @@
 .proj-content{
   width: 30%;
 }
+.proj-tech{
+  display: flex;
+  padding-top: 10px;
+gap: 7px;
+}
+.proj-tech img{
+  width: 38px;
+  height: 38px;
+}
 .proj-links {
   display: flex;
   gap: 10px;
   padding-top: 10px;
+  align-items: center;
 }
 .demo-link a {
   text-decoration: none;
   color: white;
 }
-
-
+.link a{
+  color: #ff2074;
+  font-size: 20px;
+}
+.git-text{
+  color: white;
+}

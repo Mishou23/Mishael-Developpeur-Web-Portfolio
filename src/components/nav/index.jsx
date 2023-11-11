@@ -9,6 +9,7 @@ export default function Navbar() {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
+    
   };
 
   const handleScroll = (targetId) => {

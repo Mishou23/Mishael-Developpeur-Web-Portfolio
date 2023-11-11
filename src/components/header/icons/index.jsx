@@ -7,6 +7,7 @@ import JsIcon from '../../../assets/svg/js.svg';
 import NodeJsIcon from '../../../assets/svg/nodejs.svg';
 import ReactIcon from '../../../assets/svg/reactjs.svg';
 import SassIcon from '../../../assets/svg/sass.svg';
+import ReduxIcon from '../../../assets/svg/redux.svg';
 
 export default function Icons() {
   return (
@@ -32,6 +33,9 @@ export default function Icons() {
         </div>
         <div className="icon">
           <img src={NodeJsIcon} alt="Node.js" />
+        </div>
+        <div className="icon">
+          <img src={ReduxIcon} alt="Redux" />
         </div>
       </div>
     </div>
