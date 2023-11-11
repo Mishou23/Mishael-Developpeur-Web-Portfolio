@@ -20,7 +20,7 @@ const projectData = [
   {
     id: 2,
     title: "Projet Kasa",
-    description: "Description for Project 2",
+    description: "Ce projet consiste à la découverte du framework React et de la gestion des routes avec React-router en intégrant les maquettes figma qui sont fournis. Les annonces de logements proviennent d'un fichier JSON.",
     githubLink: "https://github.com/Mishou23/OpenClassroomProject8",
     liveDemoLink: "https://yourwebsite.com/project2",
     images: [KasaProjectHousing, KasaProjectAbout, KasaProjectError ],

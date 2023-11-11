@@ -7,6 +7,7 @@
   align-items: center;
   justify-content: center;
   height: 100%;
+  padding-left: 50px;
   padding-top: 50px;
 }
 .all-projects {
@@ -30,10 +31,12 @@
   padding-bottom: 10px;
   font-family: "orbitron";
   letter-spacing: 4px;
+  text-align: center;
 }
 .proj-title {
   color: #ff2079;
   font-family: "Expletus Sans";
+  padding-bottom: 5px;
 }
 .project.directSwitch {
   justify-content: end;
@@ -45,6 +48,9 @@
   max-width: 100%;
   height: auto;
   width: 360px;
+}
+.proj-content{
+  width: 30%;
 }
 .proj-links {
   display: flex;
