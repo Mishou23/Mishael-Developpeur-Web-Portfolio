@@ -1,16 +1,23 @@
+// Navigation component
+
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link, useLocation } from 'react-router-dom';
 import i18n from '../../i18n';
 import Logo from '../../assets/images/logo_img.png';
 import './index.css';
 
 export default function Navbar() {
   const { t } = useTranslation();
+  const location = useLocation();
   const [isFixed, setIsFixed] = useState(false);
 
-  const changeLanguage = (lng) => {
-    i18n.changeLanguage(lng);
-  };
+
+const changeLanguage = (lng) => {
+  i18n.changeLanguage(lng);
+  // Update the URL with the selected language
+  window.history.pushState({}, '', `/${lng}/home`);
+};
 
   const handleScroll = (targetId) => {
     const targetElement = document.getElementById(targetId);
@@ -41,30 +48,22 @@ export default function Navbar() {
         <ul>
           <li>
             <div>
-              <a href="#accueil" onClick={() => handleScroll('accueil')}>
-                {t('Accueil')}
-              </a>
+              <Link to={`/${i18n.language}/accueil`}>{t('Accueil')}</Link>
             </div>
           </li>
           <li>
             <div>
-              <a href="#a-propos" onClick={() => handleScroll('a-propos')}>
-                {t('A propos')}
-              </a>
+              <Link to={`/${i18n.language}/a-propos`}>{t('A propos')}</Link>
             </div>
           </li>
           <li>
             <div>
-              <a href="#portfolio" onClick={() => handleScroll('portfolio')}>
-                {t('Portfolio')}
-              </a>
+              <Link to={`/${i18n.language}/projets`}>{t('Projets')}</Link>
             </div>
           </li>
           <li>
             <div>
-              <a href="#contact" onClick={() => handleScroll('contact')}>
-                {t('Contact')}
-              </a>
+              <Link to={`/${i18n.language}/contact`}>{t('Contact')}</Link>
             </div>
           </li>
           <li className="translateEng" onClick={() => changeLanguage('en')}>

@@ -1,6 +1,7 @@
 // AboutMe.js
 import React from 'react';
 import { useTranslation } from 'react-i18next';
+import { Link } from 'react-router-dom'; // Import Link from 'react-router-dom'
 import Coding from '../../assets/images/web-developer-coding-img.jpg';
 import './index.css';
 
@@ -16,6 +17,9 @@ export default function AboutMe() {
           </div>
           <div className='about-text'>
             <p>{t('AboutText')}</p>
+            <p>
+              <Link to='/Aboutme'>{t('ClickHere')}</Link> 
+            </p>
           </div>
         </article>
         <div className='aboutPhotos'>
