@@ -6,13 +6,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 50px;
+  height: 100vh;
+  padding: 50px 50px;
 }
 .all-projects {
   padding-top: 20px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .project {
   display: flex;
@@ -47,8 +48,8 @@
 }
 .proj-image img {
   max-width: 100%;
-  height: auto;
-  width: 360px;
+  height: 307px;
+  width: 100%;
 }
 .proj-content{
   width: 30%;
@@ -58,10 +59,7 @@
   padding-top: 10px;
 gap: 7px;
 }
-.proj-tech img{
-  width: 38px;
-  height: 38px;
-}
+
 .proj-links {
   display: flex;
   gap: 10px;

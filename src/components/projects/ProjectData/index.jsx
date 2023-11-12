@@ -7,6 +7,11 @@ import addWork from '../../../assets/images/user_addWork.jpg';
 import KasaProjectHousing from '../../../assets/images/Kasa_Project_Housing.jpeg';
 import KasaProjectAbout from '../../../assets/images/About.jpg';
 import KasaProjectError from '../../../assets/images/ErrorPage.jpg';
+import Booki from '../../../assets/images/Booki_agency.jpg';
+import Ohmyfood from '../../../assets/images/Ohmyfood.jpg';
+import Portfolio_photograph from '../../../assets/images/Portfolio_photograph.png';
+import ArgentBank from '../../../assets/images/ArgentBank_Login.png';
+import Events from '../../../assets/images/724Events.png';
 import HTML from '../../../assets/svg/html.svg';
 import CSS from '../../../assets/svg/css.svg';
 import JS from '../../../assets/svg/js.svg';
@@ -23,7 +28,7 @@ const projectData = [
     description: "lores",
     githubLink: "https://github.com/Mishou23/OpenclassroomProject6",
     liveDemoLink: "#",
-    images: [Homepage, Login, Edit, Works, editWork, addWork],
+    images: [Homepage ],
     technologies: [HTML, CSS, JS, NODEJS],
   },
   {
@@ -32,7 +37,7 @@ const projectData = [
     description: "Ce projet consiste à la découverte du framework React et de la gestion des routes avec React-router en intégrant les maquettes figma qui sont fournies. Les annonces de logements proviennent d'un fichier JSON.",
     githubLink: "https://github.com/Mishou23/OpenClassroomProject8",
     liveDemoLink: "https://yourwebsite.com/project2",
-    images: [KasaProjectHousing, KasaProjectAbout, KasaProjectError],
+    images: [KasaProjectHousing],
     technologies: [REACT, SASS],
   },
   {
@@ -43,7 +48,51 @@ const projectData = [
 Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
     githubLink: "https://github.com/yourusername/project3",
     liveDemoLink: "https://yourwebsite.com/project3",
-    images: [KasaProjectHousing],
+    images: [ArgentBank],
+    technologies: [REACT, REDUX, CSS],
+  },
+  {
+    id: 4,
+    title: "Booki",
+    description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur.
+
+Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
+    githubLink: "https://github.com/Mishou23/OpenclassroomProject3",
+    liveDemoLink: "https://yourwebsite.com/project3",
+    images: [Booki],
+    technologies: [REACT, REDUX, CSS],
+  },
+  {
+    id: 5,
+    title: "Ohmyfood",
+    description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur.
+
+Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
+    githubLink: "https://github.com/yourusername/project3",
+    liveDemoLink: "https://yourwebsite.com/project3",
+    images: [Ohmyfood],
+    technologies: [REACT, REDUX, CSS],
+  },
+  {
+    id: 5,
+    title: "Portfolio_photographe",
+    description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur.
+
+Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
+    githubLink: "https://github.com/Mishou23/OpenclassroomProject9",
+    liveDemoLink: "https://mishou23.github.io/OpenclassroomProject9/",
+    images: [Portfolio_photograph],
+    technologies: [REACT, REDUX, CSS],
+  },
+  {
+    id: 6,
+    title: "724Events",
+    description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur.
+
+Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
+    githubLink: "https://github.com/yourusername/project3",
+    liveDemoLink: "https://mishou23.github.io/OpenclassroomProject9/",
+    images: [Events],
     technologies: [REACT, REDUX, CSS],
   },
 ];
