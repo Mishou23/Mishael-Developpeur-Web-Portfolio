@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-dom';
 import Home from './pages/Home/index';
+import AboutMe from './pages/Aboutme/index'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -22,6 +23,8 @@ function App() {
           <Routes>
             <Route path={`/:lang/accueil`} element={<Home />} />
             <Route path={`/:lang/home`} element={<Home />} />
+            <Route path={`/:lang/a-propos`} element={<AboutMe />} />
+            <Route path={`/:lang/about-me`} element={<AboutMe />} />
           </Routes>
         </div>
       </Router>

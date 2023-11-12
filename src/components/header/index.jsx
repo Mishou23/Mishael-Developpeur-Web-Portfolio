@@ -1,6 +1,5 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
-
 import Photo from '../../assets/images/bg.jpg';
 import Icons from './icons/index';
 import './index.css';

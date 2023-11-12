@@ -1,0 +1,44 @@
+.AboutMeContainer{
+    background-color:white;
+    padding: 50px 50px;
+    height: auto;
+}
+.aboutMeContent{
+    background-color: #fffbf7;
+}
+.image-container {
+    display: flex;
+    padding-top: 100px ;
+    padding-bottom: 20px ;
+    align-items: center;
+    justify-content: center;
+}
+.image-container img{
+    width: 300px;
+    height: 393px;
+}
+.aboutMeText{
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 30px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.aboutMeText p{
+    line-height: 2em;
+}
+button{
+    padding: 7px 20px;
+    background-color: #ff2074;
+    color: white;
+    font-family: 'Expletus-Sans';
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 3px;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.btn{
+    padding-top: 10px;
+}

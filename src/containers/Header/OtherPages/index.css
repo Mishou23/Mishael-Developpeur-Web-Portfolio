@@ -1,0 +1,56 @@
+
+  .container {
+    height: 100vh;
+  }
+  .video-bg{
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+  }
+  .pageTitle{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 1;
+    margin: auto 0;
+    top: 50%;
+    border-right: 2px solid rgba(255, 255, 255, 0.75);
+    font-size: 128%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriterLoop 20s infinite normal;
+  }
+ 
+
+.pageTitle  {
+  font-weight: bold;
+  color: #ff2079;
+  font-size: 40px;
+  font-family: 'Expletus-Sans';
+  text-transform: capitalize ;
+ 
+}
+
+/* Animation */
+@keyframes typewriterLoop {
+  0%, 100% {
+    width: 0em;
+  }
+  25%, 75% {
+    width: 30.3em;
+  }
+  100% {
+    width: 0em;
+  }
+}
+
+@keyframes blinkTextCursor {
+  from {
+    border-right-color: rgba(255, 255, 255, 0.75);
+  }
+  to {
+    border-right-color: transparent;
+  }
+}

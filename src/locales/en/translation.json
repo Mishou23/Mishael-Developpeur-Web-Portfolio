@@ -6,8 +6,9 @@
     "IntroTitle": "React FrontEnd Developer",
     "IntroText": "Hello, I'm Mishael, and I love Web Development. I live in Paris, France.",
     "AboutTitle": "About Me",
-    "AboutText": "To learn more about me, who I am, and the journey that has shaped me into who I am today.",
-    "ClickHere":" click here!",
+    "AboutText": "To learn more about me, who I am, and the journey that has shaped me into who I am today. ",
+    "c'est":"",
+    "ClickHere":" Click here",
     "ProjectTitle": "Projects",
     "PortfolioDescription": "Each project is a unique development in its own right",
     "Project1Title": "Portfolio Architect Sophie Blue",
@@ -15,6 +16,13 @@
     "Project2Title": "Kasa Project",
     "Project2Description": "This project involves discovering the React framework and managing routes with React-router by integrating the provided Figma mockups. Housing listings come from a JSON file.",
     "Project3Title": "ArgentBank",
-    "Project3Description": "Project based on the website of a new bank that is starting up and trying to make a mark in the industry. The goal is to establish its web application, allowing customers to log in and manage their accounts and profiles"
+    "Project3Description": "Project based on the website of a new bank that is starting up and trying to make a mark in the industry. The goal is to establish its web application, allowing customers to log in and manage their accounts and profiles",
+    "greeting": "Hi! I'm Mishael, a passionate web developer.",
+    "journeyStart": "I graduated in Web Development using React from OpenClassrooms, and I'm currently seeking new opportunities in freelancing and open to collaborations in companies.",
+    "challenges": "My journey began in 2019 with a BAC ES, followed by an apprenticeship at OpenClassrooms, where I gained in-depth skills in HTML, CSS, JS, and NODEJS.",
+    "training2022": "Despite challenges posed by the pandemic, I worked in various fields for two years. From late October to early December 2022, I undertook a web development refresher course, revisiting all programming languages and even designing my own website.",
+    "training2023": "From March to December 2023, I successfully completed a web developer training course at OpenClassrooms, validating my skills. I am passionate about web creation and always ready for new challenges.",
+    "OfferCV":"Explore my journey and discover my skills through this website !",
+    "DownloadCV": "Download CV"
   }
   

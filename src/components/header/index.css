@@ -38,7 +38,7 @@
   white-space: nowrap;
   overflow: hidden;
   transform: translateY(-50%);
-  animation: typewriterLoop 8s infinite normal;
+  animation: typewriterLoop 20s infinite normal;
 }
 
 .icons-links {
