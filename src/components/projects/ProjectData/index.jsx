@@ -1,4 +1,4 @@
-import Homepage from '../../../assets/images/Portfolio_Sophie.jpg';
+import PortfolioArchitecte from '../../../assets/images/Portfolio_Sophie.jpg';
 import Login from '../../../assets/images/Login.jpg';
 import Edit from '../../../assets/images/user_edit.jpg';
 import Works from '../../../assets/images/user_works.png';
@@ -20,7 +20,6 @@ import REACT from '../../../assets/svg/reactjs.svg';
 import SASS from '../../../assets/svg/sass.svg';
 import REDUX from '../../../assets/svg/redux.svg';
 
-
 const projectData = [
   {
     id: 1,
@@ -28,7 +27,7 @@ const projectData = [
     description: "lores",
     githubLink: "https://github.com/Mishou23/OpenclassroomProject6",
     liveDemoLink: "#",
-    images: [Homepage ],
+    images: [{ path: PortfolioArchitecte, title: "Portfolio Architecte Sophie Blue" }],
     technologies: [HTML, CSS, JS, NODEJS],
   },
   {
@@ -37,62 +36,52 @@ const projectData = [
     description: "Ce projet consiste à la découverte du framework React et de la gestion des routes avec React-router en intégrant les maquettes figma qui sont fournies. Les annonces de logements proviennent d'un fichier JSON.",
     githubLink: "https://github.com/Mishou23/OpenClassroomProject8",
     liveDemoLink: "https://yourwebsite.com/project2",
-    images: [KasaProjectHousing],
+    images: [{ path: KasaProjectHousing, title: "Kasa Project Housing" }],
     technologies: [REACT, SASS],
   },
   {
     id: 3,
     title: "ArgentBank",
-    description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur.
-
-Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
+    description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur. Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
     githubLink: "https://github.com/yourusername/project3",
     liveDemoLink: "https://yourwebsite.com/project3",
-    images: [ArgentBank],
+    images: [{ path: ArgentBank, title: "ArgentBank Login" }],
     technologies: [REACT, REDUX, CSS],
   },
   {
     id: 4,
     title: "Booki",
-    description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur.
-
-Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
+    description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur. Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
     githubLink: "https://github.com/Mishou23/OpenclassroomProject3",
     liveDemoLink: "https://yourwebsite.com/project3",
-    images: [Booki],
+    images: [{ path: Booki, title: "Booki Agency" }],
     technologies: [REACT, REDUX, CSS],
   },
   {
     id: 5,
     title: "Ohmyfood",
-    description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur.
-
-Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
+    description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur. Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
     githubLink: "https://github.com/yourusername/project3",
     liveDemoLink: "https://yourwebsite.com/project3",
-    images: [Ohmyfood],
-    technologies: [REACT, REDUX, CSS],
-  },
-  {
-    id: 5,
-    title: "Portfolio_photographe",
-    description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur.
-
-Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
-    githubLink: "https://github.com/Mishou23/OpenclassroomProject9",
-    liveDemoLink: "https://mishou23.github.io/OpenclassroomProject9/",
-    images: [Portfolio_photograph],
+    images: [{ path: Ohmyfood, title: "Ohmyfood" }],
     technologies: [REACT, REDUX, CSS],
   },
   {
     id: 6,
+    title: "Portfolio_photographe",
+    description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur. Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
+    githubLink: "https://github.com/Mishou23/OpenclassroomProject9",
+    liveDemoLink: "https://mishou23.github.io/OpenclassroomProject9/",
+    images: [{ path: Portfolio_photograph, title: "Portfolio Photograph" }],
+    technologies: [REACT, REDUX, CSS],
+  },
+  {
+    id: 7,
     title: "724Events",
-    description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur.
-
-Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
+    description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur. Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
     githubLink: "https://github.com/yourusername/project3",
     liveDemoLink: "https://mishou23.github.io/OpenclassroomProject9/",
-    images: [Events],
+    images: [{ path: Events, title: "724Events" }],
     technologies: [REACT, REDUX, CSS],
   },
 ];

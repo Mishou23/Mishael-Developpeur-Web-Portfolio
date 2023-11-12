@@ -9,9 +9,7 @@ const ImageSlider = ({ images }) => {
   };
 
   const goToNextSlide = () => {
-    setCurrentSlide((prevSlide) =>
-      prevSlide === images.length - 3 ? 0 : prevSlide + 3
-    );
+    setCurrentSlide((prevSlide) => (prevSlide === images.length - 3 ? 0 : prevSlide + 3));
   };
 
   return (
@@ -21,13 +19,15 @@ const ImageSlider = ({ images }) => {
       </button>
       <div className="slider-container" style={{ transform: `translateX(-${currentSlide * 100}px)` }}>
         {images.map((image, index) => (
-          <img
-            key={index}
-            src={image}
-            alt={`Slide ${index + 1}`}
-            className="slide-image"
-            onClick={() => console.log('Image Clicked!')}
-          />
+          <div className="slide-item" key={index}>
+            <p className="image-title">{image.title}</p>
+            <img
+              src={image.path}
+              alt={`Slide ${index + 1}`}
+              className="slide-image"
+              onClick={() => console.log('Image Clicked!')}
+            />
+          </div>
         ))}
       </div>
       <button className="next-button" onClick={goToNextSlide}>
