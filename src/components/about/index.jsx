@@ -19,7 +19,9 @@ export default function AboutMe() {
             <p>
               {t("AboutText")}
               {t("c'est")}
-              <Link to={`/${i18n.language}/Aboutme`}>{t("ClickHere")}</Link> !
+              <Link to={`/${i18n.language}/${
+                  i18n.language === "fr" ? "a-propos" : "about-me"
+                }`}>{t("ClickHere")}</Link> !
             </p>
           </div>
         </article>
