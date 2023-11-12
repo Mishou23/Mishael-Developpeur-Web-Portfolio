@@ -17,7 +17,7 @@ const ImageSlider = ({ images }) => {
       <button className="prev-button" onClick={goToPrevSlide}>
         &lt;
       </button>
-      <div className="slider-container" style={{ transform: `translateX(-${currentSlide * 100}px)` }}>
+      <div className="slider-container" style={{ transform: `translateX(-${currentSlide * 20}%)` }}>
         {images.map((image, index) => (
           <div className="slide-item" key={index}>
             <p className="image-title">{image.title}</p>
