@@ -3,11 +3,8 @@ import { BrowserRouter as Router, Routes, Route, useParams } from 'react-router-
 import Home from './pages/Home/index';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-import i18n from './i18n';
 
-export default function App() {
-  const { lang } = useParams();
-
+function App() {
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -16,20 +13,20 @@ export default function App() {
     });
   }, []);
 
-  useEffect(() => {
-    // Set the language based on the URL parameter
-    if (lang) {
-      i18n.changeLanguage(lang);
-    }
-  }, [lang]);
+  const { lang } = useParams();
 
   return (
-    <Router>
-      <div>
-        <Routes>
-          <Route path="/:lang/accueil" element={<Home />} />
-        </Routes>
-      </div>
-    </Router>
+    <>
+      <Router>
+        <div>
+          <Routes>
+            <Route path={`/:lang/accueil`} element={<Home />} />
+            <Route path={`/:lang/home`} element={<Home />} />
+          </Routes>
+        </div>
+      </Router>
+    </>
   );
 }
+
+export default App;

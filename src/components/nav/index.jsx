@@ -1,4 +1,3 @@
-// Navigation component
 
 import React, { useState, useEffect } from 'react';
 import { useTranslation } from 'react-i18next';
@@ -12,12 +11,11 @@ export default function Navbar() {
   const location = useLocation();
   const [isFixed, setIsFixed] = useState(false);
 
-
-const changeLanguage = (lng) => {
-  i18n.changeLanguage(lng);
-  // Update the URL with the selected language
-  window.history.pushState({}, '', `/${lng}/home`);
-};
+  const changeLanguage = (lng) => {
+    i18n.changeLanguage(lng);
+    // Update the URL with the selected language and route
+    window.history.pushState({}, '', `/${lng}/${lng === 'fr' ? 'accueil' : 'home'}`);
+  };
 
   const handleScroll = (targetId) => {
     const targetElement = document.getElementById(targetId);
@@ -48,7 +46,9 @@ const changeLanguage = (lng) => {
         <ul>
           <li>
             <div>
-              <Link to={`/${i18n.language}/accueil`}>{t('Accueil')}</Link>
+              <Link to={`/${i18n.language}/${i18n.language === 'fr' ? 'accueil' : 'home'}`}>
+                {t('Accueil')}
+              </Link>
             </div>
           </li>
           <li>
