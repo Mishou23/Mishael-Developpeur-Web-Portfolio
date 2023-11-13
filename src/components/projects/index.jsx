@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import "./style.css";
-import ImageSlider from "./ImageSlider/index";
+import ImageSlider from "./Slider/index";
 import projectData from "./ProjectData/index";
 
 export default function Projects() {
