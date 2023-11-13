@@ -14,22 +14,19 @@
     align-items: center;
     position: absolute;
     z-index: 1;
+    top: 50%;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
-    font-size: 128%;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typewriterLoop 20s infinite normal;
-  }
- 
-
-.pageTitle  {
-  font-weight: bold;
+    font-weight: bold;
   color: #ff2079;
   font-size: 40px;
   font-family: 'Expletus-Sans';
   text-transform: capitalize ;
- 
-}
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriterLoop 20s infinite normal;
+    transform: translateY(-50%); 
+  }
+  
 
 /* Animation */
 @keyframes typewriterLoop {

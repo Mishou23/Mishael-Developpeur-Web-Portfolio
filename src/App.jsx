@@ -20,7 +20,7 @@ function App() {
     });
 
     const handleScroll = () => {
-      const scrollThreshold = 100; // Adjust the scroll threshold as needed
+      const scrollThreshold = 100; 
       const isScrolled = window.scrollY > scrollThreshold;
       const isPageHeightEnough = document.body.scrollHeight > window.innerHeight + scrollThreshold;
 
