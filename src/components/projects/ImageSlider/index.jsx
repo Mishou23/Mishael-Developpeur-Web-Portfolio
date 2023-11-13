@@ -5,11 +5,11 @@ const ImageSlider = ({ images }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
 
   const goToPrevSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === 0 ? images.length - 3 : prevSlide - 3));
+    setCurrentSlide((prevSlide) => Math.max(0, prevSlide - 1));
   };
 
   const goToNextSlide = () => {
-    setCurrentSlide((prevSlide) => (prevSlide === images.length - 3 ? 0 : prevSlide + 3));
+    setCurrentSlide((prevSlide) => Math.min(images.length - 1, prevSlide + 1));
   };
 
   return (
@@ -17,9 +17,12 @@ const ImageSlider = ({ images }) => {
       <button className="prev-button" onClick={goToPrevSlide}>
         &lt;
       </button>
-      <div className="slider-container" style={{ transform: `translateX(-${currentSlide * 20}%)` }}>
+      <div className="slider-container" style={{ transform: `translateX(-${currentSlide * 38}%)` }}>
         {images.map((image, index) => (
-          <div className="slide-item" key={index}>
+          <div
+            key={index}
+            className={`slide-item ${index === currentSlide ? 'active' : ''}`}
+          >
             <p className="image-title">{image.title}</p>
             <img
               src={image.path}

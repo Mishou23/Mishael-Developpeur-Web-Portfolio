@@ -52,10 +52,6 @@ nav {
     transition: 0.5s ease;
   }
   
-  li a:visited {
-    color: #e92efb;
-    transition: 0.5s ease;
-  }
   
   /* Fixed navbar styles */
   .fixed {
