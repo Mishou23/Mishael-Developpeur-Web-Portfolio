@@ -33,7 +33,7 @@
   padding: 10px;
   text-align: center;
   opacity: 0;
-  transition: opacity 4s ease, bottom 4s ease;
+  transition: opacity 4s ease-in-out, bottom 4s ease;
   clip-path: polygon(100% 0%, 0% 0%, 100% 99%);
 }
 .slide-item {
@@ -41,12 +41,16 @@
   margin-right: 15px;
   position: relative;
   opacity: 0.7; 
+  transition: 3s ease-out;
 }
 
 .slide-item.active {
   opacity: 1; 
 }
-
+.slide-item:hover{
+  opacity: 1;
+  transition: 2s ease-in;
+}
 .slide-item:hover .image-title {
   opacity: 1;
   bottom: 0; 

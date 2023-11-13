@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../../containers/Header/HomePage/index";
 import AboutMe from "../../components/about";
 import Projects from "../../components/projects/index";
+import HomeContact from "../../components/contact/index";
 import video from "../../assets/video/AI.mp4";
 import "./index.css";
 export default function Home() {
@@ -11,6 +12,7 @@ export default function Home() {
       <main>
         <AboutMe />
         <Projects />
+        <HomeContact />
       </main>
     </div>
   );

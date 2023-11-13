@@ -6,8 +6,8 @@ html, body {
 
 .btnScrollUp {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 55px;
+  right: 25px;
   z-index: 999;
   cursor: pointer;
   transition: opacity 0.5s ease, transform 0.5s ease;

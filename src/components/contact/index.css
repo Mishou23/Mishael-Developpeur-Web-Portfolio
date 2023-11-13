@@ -1,0 +1,18 @@
+.contactHomeContain{
+    height: 40vh;
+}
+.contactHomeContent{
+    padding: 50px 50px;
+    background-color: #fffbf7;
+}
+.titleContact{
+    color: #ff2079;
+    font-size: 20px;
+    padding-bottom: 15px;
+    font-family: "Expletus Sans";
+}
+.contactLink{
+    display: inline-block;
+    text-decoration: underline;
+    color: #ff2079;
+}
