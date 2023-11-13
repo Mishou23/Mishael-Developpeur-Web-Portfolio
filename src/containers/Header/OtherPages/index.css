@@ -14,8 +14,6 @@
     align-items: center;
     position: absolute;
     z-index: 1;
-    margin: auto 0;
-    top: 50%;
     border-right: 2px solid rgba(255, 255, 255, 0.75);
     font-size: 128%;
     white-space: nowrap;
