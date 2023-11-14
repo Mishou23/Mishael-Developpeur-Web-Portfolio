@@ -1,7 +1,7 @@
 .AboutMeContainer{
     background-color:white;
-    padding: 50px 50px;
-    height: 100vh;
+    padding: 110px 50px;
+    height: auto;
 }
 .aboutMeContent{
     background-color: #fffbf7;
@@ -28,7 +28,7 @@
 .aboutMeText p{
     line-height: 2em;
 }
-button{
+.downloadBtn button{
     padding: 7px 20px;
     background-color: #ff2074;
     color: white;
@@ -38,6 +38,8 @@ button{
     border-radius: 3px;
     text-transform: capitalize;
     cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 15px;
 }
 .btn{
     padding-top: 10px;

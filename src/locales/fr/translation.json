@@ -28,5 +28,14 @@
   "training2022": "Malgré les défis posés par la pandémie, j'ai travaillé dans divers domaines pendant deux ans. De fin octobre à début décembre 2022, j'ai suivi une formation de remise à niveau en développement web, revisitant tous les langages de programmation et concevant même mon propre site web.",
   "training2023": "De mars à décembre 2023, j'ai suivi avec succès une formation de développeur web chez OpenClassrooms, validant ainsi mes compétences. Je suis passionné par la création web et toujours prêt à relever de nouveaux défis. ",
   "OfferCV":"Explorez mon parcours et découvrez mes compétences à travers ce site web !",
-  "DownloadCV": "Télécharger CV"
+  "DownloadCV": "Télécharger CV",
+  "yourName": "Votre Nom",
+  "yourEmail": "Votre Email",
+  "object": "Objet",
+  "message": "Message",
+  "emailPrefix": "Email",
+  "objectPrefix": "Objet",
+  "messagePrefix": "Message",
+  "submit": "Envoyer",
+  "contactMessage":  "N’hésitez pas à me contacter, je vous répondrai dans les plus brefs délais"
 }
