@@ -3,6 +3,7 @@ import Header from "../../containers/Header/HomePage/index";
 import AboutMe from "../../components/about";
 import Projects from "../../components/projects/index";
 import HomeContact from "../../components/contact/index";
+import Footer from "../../components/footer/index";
 import video from "../../assets/video/AI.mp4";
 import "./index.css";
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
         <AboutMe />
         <Projects />
         <HomeContact />
+        <Footer/>
       </main>
     </div>
   );

@@ -1,9 +1,13 @@
 .contactHomeContain{
     height: 40vh;
+    background-color: #fffbf7;
 }
 .contactHomeContent{
-    padding: 50px 50px;
-    background-color: #fffbf7;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
 }
 .titleContact{
     color: #ff2079;
