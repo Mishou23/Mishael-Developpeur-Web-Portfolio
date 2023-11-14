@@ -27,6 +27,15 @@
     "training2022": "Despite challenges posed by the pandemic, I worked in various fields for two years. From late October to early December 2022, I undertook a web development refresher course, revisiting all programming languages and even designing my own website.",
     "training2023": "From March to December 2023, I successfully completed a web developer training course at OpenClassrooms, validating my skills. I am passionate about web creation and always ready for new challenges.",
     "OfferCV":"Explore my journey and discover my skills through this website !",
-    "DownloadCV": "Download CV"
+    "DownloadCV": "Download CV",
+    "yourName": "Your Name",
+    "yourEmail": "Your Email",
+    "object": "Object",
+    "message": "Message",
+    "emailPrefix": "Email",
+    "objectPrefix": "Object",
+    "messagePrefix": "Message",
+    "submit": "Submit",
+    "contactMessage": "Feel free to contact me, I'll get back to you as soon as possible"
   }
   

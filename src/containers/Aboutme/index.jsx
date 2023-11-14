@@ -23,7 +23,7 @@ export default function AboutMeContainer() {
             <p>{t('training2023')}</p>
             <br></br>
             <p>{t('OfferCV')}</p>
-            <div className='btn'>
+            <div className='downloadBtn'>
               <a href={CV} target="_blank" download>
                 <button>{t('DownloadCV')}</button>
               </a>
