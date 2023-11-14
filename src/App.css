@@ -3,7 +3,9 @@ html, body {
     scroll-behavior: smooth;
   }
 
-
+body{
+ background-color: #02021d;
+}
 .btnScrollUp {
   position: fixed;
   bottom: 55px;

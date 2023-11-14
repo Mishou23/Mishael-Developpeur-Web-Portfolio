@@ -17,12 +17,12 @@ export default function HomeContact() {
             <p>{t('homeContact.text.firstParagraph')}</p>
             <p>
               {t('homeContact.text.secondParagraph')}
-              <Link
+              <Link className='contactLink'
                 to={`/${i18n.language}/${
                   i18n.language === 'fr' ? 'contact' : 'contact-me'
                 }`}
               >
-                <p className='contactLink'>{t('ClickHereContact')}</p>
+                 {t('ClickHereContact')}
               </Link>
               {i18n.language === 'fr' && t('homeContact.text.thirdParagraph')}!
             </p>
