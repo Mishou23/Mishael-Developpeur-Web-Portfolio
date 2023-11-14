@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/Home/index';
 import AboutMe from './pages/Aboutme/index';
 import Projects from './pages/Projects/index';
+import Contact from './pages/Contact/index';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
@@ -66,6 +67,8 @@ function App() {
           <Route path="/:lang/about-me" element={<AboutMe />} />
           <Route path="/:lang/projets" element={<Projects />} />
           <Route path="/:lang/projects" element={<Projects />} />
+          <Route path="/:lang/contact" element={<Contact />} />
+          <Route path="/:lang/contact" element={<Contact />} />
         </Routes>
         <div className={`btnScrollUp ${showScrollUp ? '' : 'hidden'}`}>
           <div className="scrollUp"></div>
