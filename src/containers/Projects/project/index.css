@@ -1,0 +1,66 @@
+.projectContainer{
+    height: auto;
+}
+.projectContent{
+    padding: 100px 100px 0px;
+}
+.image img{
+    width: 100%;
+}
+.image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.proj-des{
+    padding: 20px 0px;
+    line-height: 2em;
+}
+.proj-des p{
+    color: white;
+    font-size: 20px;
+}
+.proj-skills{
+    padding-top: 50px;
+}
+.proj-skills h3{
+    color: #ff2079;
+    font-size: 35px;
+    font-family: 'Expletus Sans';
+}
+.proj-tech{
+    padding-top: 20px;
+    display: flex;
+    gap: 20px;
+}
+.proj-linksTitle h3{
+    color: #ff2079;
+    font-size: 35px;
+    font-family: 'Expletus Sans';
+}
+.proj-linksTitle{
+    padding-top: 30px;
+}
+.proj-all-links{
+    display: flex;
+    gap: 16px;
+    flex-direction: column;
+    align-items: start;
+}
+.projGitLink i{
+    font-size: 40px;
+    color: #551a8b;
+}
+.demo-link a {
+    text-decoration: none;
+    color: white;
+  }
+  .links{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  .demo-link svg{
+    font-size: 30px;
+
+  }
