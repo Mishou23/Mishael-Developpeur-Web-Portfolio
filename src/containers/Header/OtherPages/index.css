@@ -1,39 +1,41 @@
+.container {
+  height: 100vh;
+  overflow: hidden;
+}
 
-  .container {
-    height: 100vh;
-  }
-  .video-bg{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-  }
-  .project-bg{
-    width: 100%;
-    background-size: cover;
-    background-position: center;
-    height: auto;
-    opacity: 0.7;
-  }
-  .pageTitle{
-    display: flex;
-    width: 100%;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    z-index: 1;
-    top: 50%;
-    border-right: 2px solid rgba(255, 255, 255, 0.75);
-    font-weight: bold;
+.video-bg {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.project-bg {
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  height: auto;
+  opacity: 0.7;
+}
+
+.pageTitle {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  border-right: 2px solid rgba(255, 255, 255, 0.75);
+  font-weight: bold;
   color: #ff2079;
   font-size: 40px;
   font-family: 'Expletus-Sans';
-  text-transform: capitalize ;
-    white-space: nowrap;
-    overflow: hidden;
-    animation: typewriterLoop 20s infinite normal;
-    transform: translateY(-50%); 
-  }
-  
+  text-transform: capitalize;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriterLoop 20s infinite normal;
+  transform: translateY(-50%);
+}
 
 /* Animation */
 @keyframes typewriterLoop {
@@ -41,7 +43,7 @@
     width: 0em;
   }
   25%, 75% {
-    width: 30.3em;
+    width: 30em;
   }
   100% {
     width: 0em;

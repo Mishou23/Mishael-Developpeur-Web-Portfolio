@@ -68,7 +68,7 @@ const projectData = [
   },
   {
     id: 6,
-    title: "Portfolio_photographe",
+    title: "Portfolio-photographe",
     description: `Projet basé sur le site d’une nouvelle banque qui démarre et essaie de percer dans le secteur. Le but est de mettre en place son application web permettant aux clients de se connecter et de gérer leurs comptes et leur profil.`,
     githubLink: "https://github.com/Mishou23/OpenclassroomProject9",
     liveDemoLink: "https://mishou23.github.io/OpenclassroomProject9/",
