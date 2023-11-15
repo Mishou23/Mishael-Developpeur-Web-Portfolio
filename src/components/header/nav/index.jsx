@@ -13,14 +13,19 @@ export default function Navbar() {
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-
+  
     // Extract the current language and page name from the current URL
     const currentLanguage = location.pathname.split("/")[1];
     const currentPage = location.pathname.split("/")[2];
-
-    // Build the new URL with the updated language
-    const newUrl = `/${lng}/${currentPage}`;
-
+  
+    // Check if the current project has an ID
+    const currentProjectId = location.pathname.split("/")[3];
+  
+    // Build the new URL with the updated language and include the project ID if available
+    const newUrl = currentProjectId
+      ? `/${lng}/${currentPage}/${currentProjectId}`
+      : `/${lng}/${currentPage}`;
+  
     // Update the URL with the selected language and route
     window.history.pushState({}, "", newUrl);
     // Use react-router's navigate to update the URL and trigger a re-render
