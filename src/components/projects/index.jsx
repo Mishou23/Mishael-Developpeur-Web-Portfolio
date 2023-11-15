@@ -1,4 +1,3 @@
-import React from "react";
 import { useTranslation } from "react-i18next";
 import "./style.css";
 import ImageSlider from "./Slider/index";
@@ -6,9 +5,6 @@ import projectData from "./ProjectData/index";
 
 export default function Projects() {
   const { t } = useTranslation();
-
-  // Flatten the array of images from all projects
-  const allImages = projectData.flatMap((project) => project.images);
 
   return (
     <section className="projectContainer" id="portfolio">
@@ -19,7 +15,7 @@ export default function Projects() {
         <section className="all-projects">
           <div className="project">
             <div className="proj-image">
-              <ImageSlider images={allImages} />
+              <ImageSlider projects={projectData} />
             </div>
           </div>
         </section>

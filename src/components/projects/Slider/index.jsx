@@ -1,11 +1,13 @@
 import React, { useState, useRef } from 'react';
+import { Link } from 'react-router-dom';
+import { useTranslation } from "react-i18next";
 import './style.css';
 
-const ImageSlider = ({ images }) => {
+const ImageSlider = ({ projects }) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [dragStart, setDragStart] = useState(0);
   const sliderRef = useRef(null);
-
+  const { i18n } = useTranslation();
   const handleDragStart = (event) => {
     setDragStart(event.clientX || event.touches[0].clientX);
   };
@@ -32,7 +34,7 @@ const ImageSlider = ({ images }) => {
   };
 
   const goToNextSlide = () => {
-    setCurrentSlide((prevSlide) => Math.min(images.length - 1, prevSlide + 1));
+    setCurrentSlide((prevSlide) => Math.min(projects.length - 1, prevSlide + 1));
   };
 
   return (
@@ -49,21 +51,22 @@ const ImageSlider = ({ images }) => {
       <button className="prev-button" onClick={goToPrevSlide}>
         &lt;
       </button>
-   <div className="slider-container" style={{ transform: `translateX(-${currentSlide * 38}%)` }}>
-        {images.map((image, index) => (
-          <div
-            key={index}
-            className={`slide-item ${index === currentSlide ? 'active' : ''}`}
-          >
-            <p className="image-title">{image.title}</p>
-            <img
-              src={image.path}
-              alt={`Slide ${index + 1}`}
-              className="slide-image"
-              onClick={() => console.log('Image Clicked!')}
-            />
-          </div>
-        ))}
+      <div className="slider-container" style={{ transform: `translateX(-${currentSlide * 38}%)` }}>
+      {projects.map((project, index) => (
+  <Link
+    key={project.id}
+    to={`/${i18n.language}/${project.title.replace(/\s+/g, '-')}/${project.id}`}
+    className={`slide-item ${index === currentSlide ? 'active' : ''}`}
+  >
+    <p className="image-title">{project.title}</p>
+    <img
+      src={project.images[0].path}
+      alt={`Slide ${index + 1}`}
+      className="slide-image"
+      onClick={() => console.log(`Image ${project.id} Clicked!`)}
+    />
+  </Link>
+))}
       </div>
       <button className="next-button" onClick={goToNextSlide}>
         &gt;
