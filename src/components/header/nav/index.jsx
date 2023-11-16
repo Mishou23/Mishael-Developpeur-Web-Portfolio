@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useTranslation } from "react-i18next";
-import { Link, useLocation, useNavigate } from "react-router-dom"; // Update this line
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import i18n from "../../../i18n";
 import Logo from "../../../assets/images/logo_img.png";
 import "./index.css";
@@ -8,7 +8,7 @@ import "./index.css";
 export default function Navbar() {
   const { t } = useTranslation();
   const location = useLocation();
-  const navigate = useNavigate(); // Update this line
+  const navigate = useNavigate(); 
   const [isFixed, setIsFixed] = useState(false);
 
   const changeLanguage = (lng) => {
