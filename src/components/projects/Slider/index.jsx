@@ -52,8 +52,8 @@ const ImageSlider = ({ projects }) => {
         &lt;
       </button>
       <div className="slider-container" style={{ transform: `translateX(-${currentSlide * 38}%)` }}>
-      {projects.map((project, index) => (
-  <Link
+       {projects.map((project, index) => (
+        <Link
     key={project.id}
     to={`/${i18n.language}/${project.title.replace(/\s+/g, '-')}/${project.id}`}
     className={`slide-item ${index === currentSlide ? 'active' : ''}`}
@@ -67,6 +67,7 @@ const ImageSlider = ({ projects }) => {
     />
   </Link>
 ))}
+
       </div>
       <button className="next-button" onClick={goToNextSlide}>
         &gt;

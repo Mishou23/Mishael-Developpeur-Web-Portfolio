@@ -1,23 +1,39 @@
-header{
+header {
   position: relative;
-height: 100vh; 
+  height: 100vh;
 }
 
 .header-container {
-position: relative;
-z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 /* Styles for the video background */
 .video-background {
-width: 100%;
-height: 100%;
-object-fit: cover;
-position: absolute;
-top: 0;
-left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
-.header-container{
-    padding: 0 225px;
+.fade-out {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Adjust the background color and opacity as needed */
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  pointer-events: none; /* Allow clicks to pass through the overlay */
+}
+
+.fade-out.hide {
+  opacity: 0;
+}
+
+.header-container {
+  padding: 0 225px;
 }
