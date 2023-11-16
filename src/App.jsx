@@ -54,7 +54,7 @@ function App() {
     }
   };
   const handleJumptoTop = (event) => {
-    const sliderImg =  event.target.classList.contains('image-title')
+    const sliderImg =  event.target.classList.contains('slide-image')
   
     if (sliderImg) {
       event.preventDefault();
