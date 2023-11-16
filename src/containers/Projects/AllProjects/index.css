@@ -1,0 +1,41 @@
+.projectsContainer {
+    height: auto;
+    background-color: white;
+  }
+  
+  .projectsContent {
+    padding: 120px 100px;
+  }
+  
+  .project-item img {
+    width: 100%;
+  }
+  
+  .project-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Responsive grid with minimum width of 300px */
+    grid-gap: 20px; /* Adjust the gap as needed */
+    align-items: flex-start;
+  }
+  
+  /* Set the maximum number of projects per row based on your preference */
+  @media screen and (min-width: 600px) {
+    .project-group {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
+  @media screen and (min-width: 900px) {
+    .project-group {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  }
+  
+  .projectImg-title {
+    color: #ff2079;
+  }
+  
+  .project-item a {
+    text-decoration: none;
+  }
+  

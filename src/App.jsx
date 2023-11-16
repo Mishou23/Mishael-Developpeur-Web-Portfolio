@@ -45,6 +45,7 @@ function App() {
       event.target.tagName.toLowerCase() === 'a' ||
       (event.target.tagName.toLowerCase() === 'span' &&
         event.target.closest('a') instanceof HTMLAnchorElement) ||
+       
       event.target.classList.contains('scrollUp')
     ) {
       event.preventDefault();
@@ -54,7 +55,17 @@ function App() {
       });
     }
   };
-
+  const handleJumptoTop = (event) => {
+    const sliderImg =  event.target.classList.contains('image-title')
+  
+    if (sliderImg) {
+      event.preventDefault();
+      window.scrollTo(0, 0);
+    }
+  };
+  
+  document.addEventListener('click', handleJumptoTop);
+  
   document.addEventListener('click', handleScrollTop);
 
   return (
