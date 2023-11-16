@@ -43,9 +43,7 @@ function App() {
   const handleScrollTop = (event) => {
     if (
       event.target.tagName.toLowerCase() === 'a' ||
-      (event.target.tagName.toLowerCase() === 'span' &&
-        event.target.closest('a') instanceof HTMLAnchorElement) ||
-       
+      (event.target.tagName.toLowerCase() === 'span') ||
       event.target.classList.contains('scrollUp')
     ) {
       event.preventDefault();
