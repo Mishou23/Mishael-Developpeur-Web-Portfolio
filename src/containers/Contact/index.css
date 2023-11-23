@@ -56,3 +56,9 @@ textarea{
     cursor: pointer;
     margin-top: 15px;
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+    .form {
+        padding: 80px 50px;
+    }
+}
