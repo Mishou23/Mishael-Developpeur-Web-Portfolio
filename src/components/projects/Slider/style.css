@@ -10,7 +10,7 @@
 }
 
 .slide-item {
-  flex: 0 0 auto;
+  flex: 0 0 100%;
   margin-right: 15px;
   position: relative;
 }
@@ -23,6 +23,15 @@
   position: relative;
 }
 
+.active {
+  transform: translateX(0);
+}
+
+
+/* Slide transition for moving to the next slide */
+.next-transition {
+  transform: translateX(-100%);
+}
 .image-title {
   color: white;
   position: absolute;

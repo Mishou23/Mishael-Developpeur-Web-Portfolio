@@ -43,7 +43,7 @@
     width: 0em;
   }
   25%, 75% {
-    width: 30em;
+    width: 100%;
   }
   100% {
     width: 0em;

@@ -44,6 +44,9 @@
 .icons-links {
   display: flex;
 }
+.icons-links p {
+  display: flex;
+}
 
 .gitLink {
   padding-left: 12px;
@@ -73,7 +76,7 @@
     width: 0;
   }
   25%, 75% {
-    width: 20.5em;
+    width: 100%;
   }
   100% {
     width: 0;

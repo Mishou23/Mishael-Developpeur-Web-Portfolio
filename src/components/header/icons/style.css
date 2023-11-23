@@ -11,6 +11,7 @@ span{
     font-weight: bold;
     font-size: 17px;
     color: #ff2079;
+    white-space: nowrap;
 }
 .all-icons{
     display: flex;

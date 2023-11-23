@@ -50,8 +50,10 @@ const ImageSlider = ({ projects }) => {
     >
       <button className="prev-button" onClick={goToPrevSlide}>
         &lt;
-      </button>
-      <div className="slider-container" style={{ transform: `translateX(-${currentSlide * 38}%)` }}>
+      </button>  
+      
+      <div className="slider-container" style={{ transform: `translateX(-${currentSlide *60}%)` }}>
+    
        {projects.map((project, index) => (
         <Link
     key={project.id}

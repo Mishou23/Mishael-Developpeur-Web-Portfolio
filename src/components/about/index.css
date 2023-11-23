@@ -16,6 +16,7 @@
 .about-title h2{
 font-family: 'Expletus Sans';
 color: #ff2079;
+white-space: nowrap;
 }
 .about-text{
     padding-top: 10px;
@@ -31,4 +32,11 @@ color: #ff2079;
 .imgContainer img{
     width: 300px;
     height: 350px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .aboutContainer{
+        padding: 0px 20px;
+     
+    }
 }
