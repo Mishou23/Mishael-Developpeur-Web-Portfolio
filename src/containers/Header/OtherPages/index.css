@@ -13,7 +13,7 @@
   width: 100%;
   background-size: cover;
   background-position: center;
-  height: auto;
+  height: 86vh;
   opacity: 0.7;
 }
 
@@ -63,6 +63,5 @@
 .pageTitle{
   font-size: 25px;
 }
-.project-bg {
-  height: 86vh;}
+
 }
