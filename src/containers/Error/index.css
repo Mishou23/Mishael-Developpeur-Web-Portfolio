@@ -8,7 +8,9 @@
     padding: 40px 50px;
     display:flex;
     align-items: center;
-    gap: 100px;
+    justify-content: space-between;
+    width: 100%;
+    gap:20px;
 }
 span{
     font-size: 20px;
