@@ -8,14 +8,16 @@ import video from "../../assets/video/AI.mp4";
 import "./index.css";
 export default function Home() {
   return (
-    <div>
+    <>
       <Header disableIntro={false} video={video} />
       <main>
         <AboutMe />
         <Projects />
         <HomeContact />
-        <Footer/>
       </main>
-    </div>
+      <footer>
+        <Footer/>
+        </footer>
+    </>
   );
 }

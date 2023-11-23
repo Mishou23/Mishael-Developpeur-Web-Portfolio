@@ -37,5 +37,8 @@
   "objectPrefix": "Objet",
   "messagePrefix": "Message",
   "submit": "Envoyer",
-  "contactMessage":  "N’hésitez pas à me contacter, je vous répondrai dans les plus brefs délais"
+  "contactMessage":  "N’hésitez pas à me contacter, je vous répondrai dans les plus brefs délais",
+  "errorTitle": "Nous ne trouvons pas la page recherchée",
+  "errorText": "Vérifiez que l'URL saisie ne contient pas d'erreur.",
+  "ErrorLink": "Aller à la page d'accueil"
 }

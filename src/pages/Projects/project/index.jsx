@@ -9,7 +9,10 @@ export default function Projects() {
         <main>
          <MyProject/>
         </main>
+        <footer>
         <Footer/>
+        </footer>
+        
       </>
     );
   }

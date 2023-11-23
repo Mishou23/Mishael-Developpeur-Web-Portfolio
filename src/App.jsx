@@ -1,12 +1,13 @@
 // App.jsx
 
 import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route,Navigate } from 'react-router-dom';
 import Home from './pages/Home/index';
 import AboutMe from './pages/Aboutme/index';
 import Projects from './pages/Projects/allProjects/index';
 import Project from './pages/Projects/project/index';
 import Contact from './pages/Contact/index';
+import Error from './pages/ErrorPage/index'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 import './App.css';
@@ -44,7 +45,7 @@ function App() {
     if (
       event.target.tagName.toLowerCase() === 'a' ||
       (event.target.tagName.toLowerCase() === 'span') ||
-      event.target.classList.contains('scrollUp')
+      event.target.classList.contains('scrollUp') 
     ) {
       event.preventDefault();
       window.scrollTo({
@@ -80,6 +81,9 @@ function App() {
           <Route path="/:lang/:title/:id" element={<Project />} />
           <Route path="/:lang/contact" element={<Contact />} />
           <Route path="/:lang/contact" element={<Contact />} />
+          <Route path="/:lang/error" element={<Error />} />
+          <Route path="/fr/error" element={<Error />} />
+  <Route path="*" element={<Navigate to="/fr/error" />} />
         </Routes>
         <div className={`btnScrollUp ${showScrollUp ? '' : 'hidden'}`}>
           <div className="scrollUp"></div>

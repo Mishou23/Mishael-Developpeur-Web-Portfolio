@@ -21,7 +21,7 @@ export default function Footer() {
   const { i18n } = useTranslation();
   return (
     <>
-      <footer className='footerContainer'>
+      <section className='footerContainer'>
         <div className='footerContent'>
         <div className='footerLinks'>
         <div className='contactLinks'>
@@ -59,7 +59,7 @@ export default function Footer() {
             <p>&copy;2023 Mishael Richardson</p>
           </div>
         </div>
-      </footer>
+      </section>
     </>
   );
 }

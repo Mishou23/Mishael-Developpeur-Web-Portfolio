@@ -11,7 +11,9 @@ export default function AboutMePage() {
       <main>
         <AboutMeContainer />
       </main>
-      <Footer/>
+      <footer>
+        <Footer/>
+        </footer>
     </>
   );
 }
