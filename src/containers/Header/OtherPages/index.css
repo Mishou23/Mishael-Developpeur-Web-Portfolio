@@ -58,3 +58,11 @@
     border-right-color: transparent;
   }
 }
+
+@media (min-width: 768px) and (max-width: 1024px) {
+.pageTitle{
+  font-size: 25px;
+}
+.project-bg {
+  height: 86vh;}
+}

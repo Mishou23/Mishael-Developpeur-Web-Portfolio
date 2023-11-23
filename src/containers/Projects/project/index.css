@@ -64,3 +64,30 @@
     font-size: 30px;
 
   }
+  
+@media (min-width: 768px) and (max-width: 1024px) {
+
+    .proj-tech img{
+      width: 45px;
+    }
+    .proj-linksTitle h3{
+        font-size: 25px;
+    }
+    .proj-skills h3{
+        font-size: 25px;
+    }
+    .projectContent {
+        padding: 25px 50px 0px;
+    }
+    .demo-link svg{
+        font-size: 25px;
+    
+      }
+      .projGitLink i{
+        font-size: 30px;
+    }
+    .proj-des p{
+        color: white;
+        font-size: 18px;
+    }
+    }
