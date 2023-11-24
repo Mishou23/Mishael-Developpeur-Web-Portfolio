@@ -8,29 +8,41 @@ import "./index.css";
 export default function Navbar() {
   const { t } = useTranslation();
   const location = useLocation();
-  const navigate = useNavigate(); 
+  const navigate = useNavigate();
   const [isFixed, setIsFixed] = useState(false);
+
+  useEffect(() => {
+    const menubtn = document.querySelector(".menu-btn");
+    const navigation = document.querySelector(".navigation");
+
+    // Check if the elements exist before adding the event listener
+    if (menubtn && navigation) {
+      const menuBurger = () => {
+        menubtn.classList.toggle("activation-smart-menu");
+        navigation.classList.toggle("activation-smart-menu");
+      };
+
+      menubtn.addEventListener("click", menuBurger);
+
+      return () => {
+        menubtn.removeEventListener("click", menuBurger);
+      };
+    }
+  }, []); // Empty dependency array ensures this effect runs once on mount
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
-  
-    // Extract the current language and page name from the current URL
+
     const currentLanguage = location.pathname.split("/")[1];
     const currentPage = location.pathname.split("/")[2];
-  
-    // Check if the current project has an ID
     const currentProjectId = location.pathname.split("/")[3];
-  
-    // Build the new URL with the updated language and include the project ID if available
+
     const newUrl = currentProjectId
       ? `/${lng}/${currentPage}/${currentProjectId}`
       : `/${lng}/${currentPage}`;
-  
-    // Update the URL with the selected language and route
+
     window.history.pushState({}, "", newUrl);
-    // Use react-router's navigate to update the URL and trigger a re-render
     navigate(newUrl);
-    // Set the lang attribute dynamically
     document.documentElement.lang = lng;
   };
 
@@ -57,9 +69,15 @@ export default function Navbar() {
   return (
     <nav className={`${isFixed ? "fixed" : ""}`}>
       <div className="container-nav">
-        <div className="imageContainer">
+      <div className="nav-menu">
+      <div className="imageContainer">
           <img src={Logo} alt="Logo" />
         </div>
+        <div className="menuContainer">
+        <div className="menu-btn"></div>
+        </div>
+      </div>
+        <div className="navigation">
         <ul>
           <li>
             <div>
@@ -85,16 +103,24 @@ export default function Navbar() {
           </li>
           <li>
             <div>
-              <Link to={`/${i18n.language}/${
+              <Link
+                to={`/${i18n.language}/${
                   i18n.language === "fr" ? "projets" : "projects"
-                }`}>{t("Projets")}</Link>
+                }`}
+              >
+                {t("Projets")}
+              </Link>
             </div>
           </li>
           <li>
             <div>
-              <Link to={`/${i18n.language}/${
+              <Link
+                to={`/${i18n.language}/${
                   i18n.language === "fr" ? "contact" : "contact"
-                }`}>{t("Contact")}</Link>
+                }`}
+              >
+                {t("Contact")}
+              </Link>
             </div>
           </li>
           <li className="translateEng" onClick={() => changeLanguage("en")}>
@@ -114,6 +140,7 @@ export default function Navbar() {
             </span>
           </li>
         </ul>
+        </div>
       </div>
     </nav>
   );

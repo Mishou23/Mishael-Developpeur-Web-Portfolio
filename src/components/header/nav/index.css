@@ -6,13 +6,13 @@ nav {
 .container-nav {
   display: flex;
   justify-content: space-between;
-  width: 95%;
+  width: 100%;
   align-items: center;
   padding: 20px 10px;
 }
 
 .imageContainer img {
-  width: 100%;
+  width: 140px;
   height: 28px;
 }
 
@@ -69,4 +69,40 @@ a:hover {
     transform: translateY(0);
   }
 }
+.navigation{
+  padding-right: 30px;
+}
 
+@media (min-width:350px)and (max-width: 768px){
+  .menu-btn {
+    background: url(../../../assets/images/menu.png);
+    background-repeat: no-repeat;
+    background-size: 30px;
+    background-position: center;
+    width: 40px;
+    position: absolute;
+    height: 40px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+ul li{
+  display: none;
+}
+.menu-btn.activation-smart-menu {
+  z-index: 999;
+  background: url(../../../assets/images/closeMenu.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: 0.5s ease;
+}
+.navigation.activation-smart-menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-menu{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+}
