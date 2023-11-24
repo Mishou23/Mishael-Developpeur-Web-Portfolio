@@ -6,9 +6,9 @@ nav {
 .container-nav {
   display: flex;
   justify-content: space-between;
-  width: 100%;
   align-items: center;
   padding: 20px 10px;
+  width: 95%;
 }
 
 .imageContainer img {
@@ -20,10 +20,16 @@ nav {
   padding-left: 50px;
 }
 
+.menuContainer {
+  display: none; 
+}
+
 ul {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0; 
+  padding: 0; 
 }
 
 li {
@@ -32,7 +38,7 @@ li {
 
 li a {
   text-decoration: none;
-  padding-left: 30px;
+  padding: 0 15px;
   color: #ff2079;
   white-space: nowrap;
   font-family: 'Orbitron', sans-serif;
@@ -52,7 +58,7 @@ a:hover {
   transition: 0.5s ease;
 }
 
-/* Fixed navbar styles */
+
 .fixed {
   position: fixed;
   top: 0;
@@ -69,43 +75,71 @@ a:hover {
     transform: translateY(0);
   }
 }
-.navigation{
+
+.navigation-items {
   padding-right: 30px;
 }
 
-@media (min-width:350px)and (max-width: 768px){
+@media (min-width: 350px) and (max-width: 768px) {
   .menu-btn {
     background: url(../../../assets/images/menu.png);
     background-repeat: no-repeat;
     background-size: 30px;
     background-position: center;
     width: 40px;
-    position: absolute;
     height: 40px;
     cursor: pointer;
     transition: 0.3s ease;
-}
-ul li{
-  display: none;
-}
-.menu-btn.activation-smart-menu {
-  z-index: 999;
-  background: url(../../../assets/images/closeMenu.png);
-  background-repeat: no-repeat;
-  background-position: center;
-  transition: 0.5s ease;
-}
-.navigation.activation-smart-menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.nav-menu{
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-.imageContainer {
-  padding-left: 20px;
-}
+  }
+
+  .menuContainer {
+    display: block; 
+  }
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #020116;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    z-index: 999;
+    transition: 0.5s ease;
+    max-height: 0;
+    overflow: hidden;
+  }
+
+  ul.show-menu {
+    max-height: 300px; 
+  }
+
+  ul li {
+    display: block;
+    padding: 15px 0; 
+  }
+
+  .menu-btn.activation-smart-menu {
+    background: url(../../../assets/images/closeMenu.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: 0.5s ease;
+  }
+
+  .navigation-items.activation-smart-menu {
+    display: block;
+  }
+
+  .nav-menu {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  .imageContainer {
+    padding-left: 20px;
+  }
+  .container-nav {
+    width: 100%;}
 }
