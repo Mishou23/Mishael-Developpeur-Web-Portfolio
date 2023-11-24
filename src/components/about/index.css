@@ -12,6 +12,7 @@
     flex-direction: row-reverse;
     justify-content: space-between;
     gap: 40px;
+    align-items: center;
 }
 .about-title h2{
 font-family: 'Expletus Sans';
@@ -37,6 +38,20 @@ white-space: nowrap;
 
     .aboutContainer{
         padding: 0px 20px;
-     
+        height: 50vh;
     }
+}
+@media (min-width: 360px) and (max-width: 768px) {
+
+    .imgContainer img {
+        width: 211px;
+        height: 265px;
+    }
+    .containAll {
+        flex-direction: column-reverse;
+    }
+    .aboutContainer {
+        height: 50vh;
+        padding: 0px 15px;
+}
 }

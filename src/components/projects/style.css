@@ -78,3 +78,10 @@ gap: 7px;
 .git-text{
   color: white;
 }
+
+@media (min-width:350px)and (max-width: 768px){
+  .projectContainer {
+ 
+    padding: 50px 20px; 
+}
+}

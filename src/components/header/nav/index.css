@@ -105,4 +105,7 @@ ul li{
   justify-content: space-between;
   width: 100%;
 }
+.imageContainer {
+  padding-left: 20px;
+}
 }

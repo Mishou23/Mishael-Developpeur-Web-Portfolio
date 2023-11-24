@@ -91,3 +91,30 @@
     border-right-color: transparent;
   }
 }
+
+@media screen and (max-width: 1024px){
+
+.introContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column-reverse;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  height: auto;
+   gap: 0px; 
+}
+.content {
+  padding-top: 50px;
+}
+.intro-text p{
+font-size: 15px;
+}
+.introTitle {
+  font-size: 100%;}
+
+  .myPhoto img {
+    width: 27vh;
+    height: 24vh;
+}
+}

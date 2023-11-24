@@ -20,3 +20,15 @@
     text-decoration: underline;
     color: #ff2079;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+    .contactHomeContain{
+        height: 25vh;
+    }
+}
+@media (min-width: 360px) and (max-width: 768px) {
+    .contactHomeContain{
+        height: 25vh;
+    }
+        .contactHomeContent{
+            padding: 0 15px;}
+    }
