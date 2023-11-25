@@ -44,6 +44,19 @@
 .btn{
     padding-top: 10px;
 }
-@media (min-width: 768px) and (max-width: 1024px) {
-
+@media screen and (max-width: 1024px) {
+    .AboutMeContainer{
+        background-color:white;
+        padding: 20px 20px;}
+        .aboutMeText{
+            padding-left: 0px;
+            padding-right: 0px;
+            padding-bottom: 20px;
+        }
+        .image-container img {
+            width: 260px;
+            height: 303px;
+        }
+        .image-container {
+            padding-top: 30px ;}
 }
