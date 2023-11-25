@@ -26,7 +26,7 @@ export default function PageHeader({ hideVideo }) {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const newOpacity = 0.9 - scrollPosition / 900; // control the scroll distance for the fade-out
+      const newOpacity = 0.9 - scrollPosition / 1500; // control the scroll distance for the fade-out
       setScrollOpacity(newOpacity);
     };
 
