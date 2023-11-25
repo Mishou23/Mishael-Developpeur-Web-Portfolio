@@ -38,4 +38,8 @@
   .project-item a {
     text-decoration: none;
   }
-  
+  @media screen and (max-width: 1024px) {
+  .projectsContent {
+    padding: 30px 20px;
+}
+}
