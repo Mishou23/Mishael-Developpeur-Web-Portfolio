@@ -3,9 +3,11 @@ import { useParams } from "react-router-dom";
 import projectData from "../../../components/projects/ProjectData/index";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { useTranslation } from 'react-i18next';
 import "./index.css";
 
 export default function Project() {
+  const { t} = useTranslation();
   const { id, lang: urlLang } = useParams();
   const [lang, setLang] = useState(urlLang || "fr"); 
   const currentProject = projectData.find(
@@ -38,7 +40,7 @@ export default function Project() {
             <p>{getDescription()}</p>
           </div>
           <div className="proj-skills">
-            <h3>Compétences</h3>
+            <h3>{t("Skills")}</h3>
           </div>
           <div className="proj-tech">
             <div className="allTechItems">
@@ -56,7 +58,7 @@ export default function Project() {
           </div>
           <div className="proj-all-links">
             <div className="proj-linksTitle">
-              <h3>Liens</h3>
+              <h3>{t("Link")}</h3>
             </div>
             <div className="links">
               <div class="projGitLink">

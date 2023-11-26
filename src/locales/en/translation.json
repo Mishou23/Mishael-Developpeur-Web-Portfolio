@@ -39,6 +39,8 @@
     "contactMessage": "Feel free to contact me, I'll get back to you as soon as possible",
     "errorTitle": "Page Not Found",
     "errorText": "We couldn't find the requested page. Please check that the entered URL is correct.",
-    "ErrorLink": "Go to the homepage"
+    "ErrorLink": "Go to the homepage",
+    "Link":"Links",
+    "Skills": "Skills"
   }
   
