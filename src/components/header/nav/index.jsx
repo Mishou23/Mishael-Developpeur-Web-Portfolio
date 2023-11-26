@@ -57,7 +57,13 @@ export default function Navbar() {
       <div className="container-nav">
         <div className="nav-menu">
           <div className="imageContainer">
-            <img src={Logo} alt="Logo" />
+          <Link
+                  to={`/${i18n.language}/${
+                    i18n.language === "fr" ? "accueil" : "home"
+                  }`}
+                >
+                   <img src={Logo} alt="Logo" />
+                </Link>
           </div>
           <div className="menuContainer">
             <div
