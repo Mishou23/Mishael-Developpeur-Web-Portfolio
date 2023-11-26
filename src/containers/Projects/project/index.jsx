@@ -1,13 +1,15 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import projectData from "../../../components/projects/ProjectData/index";
+import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from 'react-i18next';
 import "./index.css";
 
 export default function Project() {
-  const { t } = useTranslation();
+  const { t} = useTranslation();
   const { id, lang: urlLang } = useParams();
-  const [lang, setLang] = useState(urlLang || "fr");
+  const [lang, setLang] = useState(urlLang || "fr"); 
   const currentProject = projectData.find(
     (project) => String(project.id) === id
   );
@@ -47,7 +49,7 @@ export default function Project() {
                   <div className="tech-item">
                     <img src={tech} alt={`Technology ${index + 1}`} />
                     <div className="tech-text">
-                      <p>{projectData[Number(id) - 1].technologiesText[index]}</p>
+                     <p> {projectData[Number(id) - 1].technologiesText[index]}</p>
                     </div>
                   </div>
                 </div>
@@ -59,23 +61,25 @@ export default function Project() {
               <h3>{t("Link")}</h3>
             </div>
             <div className="links">
-              <div className="projGitLink">
+              <div class="projGitLink">
                 <a
                   href={currentProject.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fab fa-github"></i>
+                  <i class="fa-brands fa-github"></i>
                 </a>
               </div>
               {currentProject.liveDemoLink && (
-                <div className="demo-link">
-                  <a href={currentProject.liveDemoLink} target="_blank" rel="noopener noreferrer">
-                    <i className="fas fa-external-link-alt"></i>
-                  </a>
-                  <p> Live Demo</p>
-                </div>
-              )}
+  <div className="demo-link">
+    <a href={currentProject.liveDemoLink} target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faExternalLinkAlt} />
+    
+    </a>
+   <p> Live Demo</p>
+  </div>
+)}
+
             </div>
           </div>
         </article>
