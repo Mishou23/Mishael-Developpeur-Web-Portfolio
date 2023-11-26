@@ -117,4 +117,9 @@ font-size: 15px;
     width: 27vh;
     height: 24vh;
 }
+.myPhoto{
+  display: flex;
+  justify-content: start;
+  width: 87%;
+}
 }

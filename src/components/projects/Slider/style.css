@@ -46,12 +46,12 @@
   clip-path: polygon(100% 0%, 0% 0%, 100% 99%);
 }
 .slide-item {
-  flex: 0 0 auto;
+  width: 96%; 
   margin-right: 15px;
   position: relative;
-  opacity: 0.7; 
-  transition: 3s ease-out;
+  display: inline-block; 
 }
+
 
 .slide-item.active {
   opacity: 1; 
@@ -90,4 +90,13 @@
 .next-button {
   right: 0;
   transform: translateY(-50%);
+}
+
+
+@media (min-width:350px)and (max-width: 768px){
+  .slide-item {
+    flex: 0 0 97%;
+    margin-right: 15px;
+    position: relative;
+  }
 }
