@@ -1,17 +1,17 @@
-import PortfolioArchitecte from '../../../assets/images/Portfolio_Sophie.jpg';
-import KasaProjectHousing from '../../../assets/images/Kasa_Project_Housing.jpeg';
-import ArgentBank from '../../../assets/images/ArgentBank_Login.png';
-import Booki from '../../../assets/images/Booki_agency.jpg';
-import Ohmyfood from '../../../assets/images/Ohmyfood.jpg';
-import Portfolio_photograph from '../../../assets/images/Portfolio_photograph.png';
-import Events from '../../../assets/images/724Events.png';
-import HTML from '../../../assets/svg/html.svg';
-import CSS from '../../../assets/svg/css.svg';
-import JS from '../../../assets/svg/js.svg';
-import NODEJS from '../../../assets/svg/nodejs.svg';
-import REACT from '../../../assets/svg/reactjs.svg';
-import SASS from '../../../assets/svg/sass.svg';
-import REDUX from '../../../assets/svg/redux.svg';
+import PortfolioArchitecte from "../../../assets/images/Portfolio_Sophie.jpg";
+import KasaProjectHousing from "../../../assets/images/Kasa_Project_Housing.jpeg";
+import ArgentBank from "../../../assets/images/ArgentBank_Login.png";
+import Booki from "../../../assets/images/Booki_agency.jpg";
+import Ohmyfood from "../../../assets/images/Ohmyfood.jpg";
+import Portfolio_photograph from "../../../assets/images/Portfolio_photograph.png";
+import Events from "../../../assets/images/724Events.png";
+import HTML from "../../../assets/svg/html.svg";
+import CSS from "../../../assets/svg/css.svg";
+import JS from "../../../assets/svg/js.svg";
+import NODEJS from "../../../assets/svg/nodejs.svg";
+import REACT from "../../../assets/svg/reactjs.svg";
+import SASS from "../../../assets/svg/sass.svg";
+import REDUX from "../../../assets/svg/redux.svg";
 
 const projectData = [
   {
@@ -23,8 +23,11 @@ const projectData = [
     },
     githubLink: "https://github.com/Mishou23/OpenclassroomProject6",
     liveDemoLink: "#",
-    images: [{ path: PortfolioArchitecte, title: "Portfolio Architecte Sophie Blue" }],
+    images: [
+      { path: PortfolioArchitecte, title: "Portfolio Architecte Sophie Blue" },
+    ],
     technologies: [HTML, CSS, JS, NODEJS],
+    technologiesText: ["HTML", "CSS", "JS", "NodeJS"],
   },
   {
     id: 2,
@@ -37,6 +40,7 @@ const projectData = [
     liveDemoLink: "https://yourwebsite.com/project2",
     images: [{ path: KasaProjectHousing, title: "Kasa Project Housing" }],
     technologies: [REACT, SASS],
+    technologiesText: ["React", "SASS"],
   },
   {
     id: 3,
@@ -49,6 +53,7 @@ const projectData = [
     liveDemoLink: "https://yourwebsite.com/project3",
     images: [{ path: ArgentBank, title: "ArgentBank Login" }],
     technologies: [REACT, REDUX, CSS],
+    technologiesText: ["React", "Redux", "CSS"],
   },
   {
     id: 4,
@@ -60,7 +65,8 @@ const projectData = [
     githubLink: "https://github.com/Mishou23/OpenclassroomProject3",
     liveDemoLink: "https://yourwebsite.com/project3",
     images: [{ path: Booki, title: "Booki Agency" }],
-    technologies: [REACT, REDUX, CSS],
+    technologies: [HTML, CSS],
+    technologiesText: ["HTML", "CSS"],
   },
   {
     id: 5,
@@ -72,7 +78,8 @@ const projectData = [
     githubLink: "https://github.com/yourusername/project3",
     liveDemoLink: "https://yourwebsite.com/project3",
     images: [{ path: Ohmyfood, title: "Ohmyfood" }],
-    technologies: [REACT, REDUX, CSS],
+    technologies: [HTML, CSS],
+    technologiesText: ["HTML", "CSS"],
   },
   {
     id: 6,
@@ -84,7 +91,9 @@ const projectData = [
     githubLink: "https://github.com/Mishou23/OpenclassroomProject9",
     liveDemoLink: "https://mishou23.github.io/OpenclassroomProject9/",
     images: [{ path: Portfolio_photograph, title: "Portfolio Photograph" }],
-    technologies: [REACT, REDUX, CSS],
+    technologies: [HTML, JS, CSS],
+    technologiesText: ["HTML", "JS", "CSS"]
+
   },
   {
     id: 7,
@@ -96,7 +105,9 @@ const projectData = [
     githubLink: "https://github.com/yourusername/project3",
     liveDemoLink: "https://mishou23.github.io/OpenclassroomProject9/",
     images: [{ path: Events, title: "724Events" }],
-    technologies: [REACT, REDUX, CSS],
+    technologies: [REACT, SASS],
+    technologiesText: ["React", "SASS"]
+
   },
 ];
 

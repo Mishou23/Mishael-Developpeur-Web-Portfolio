@@ -7,8 +7,10 @@ import "./index.css";
 
 export default function Project() {
   const { id, lang: urlLang } = useParams();
-  const [lang, setLang] = useState(urlLang || "fr"); // Use the language from the URL if present, otherwise default to "fr"
-  const currentProject = projectData.find((project) => String(project.id) === id);
+  const [lang, setLang] = useState(urlLang || "fr"); 
+  const currentProject = projectData.find(
+    (project) => String(project.id) === id
+  );
 
   useEffect(() => {
     // Update language if the URL language changes
@@ -20,14 +22,16 @@ export default function Project() {
   }
 
   const getDescription = () => {
-    return lang === "fr" ? currentProject.description.fr : currentProject.description.en;
+    return lang === "fr"
+      ? currentProject.description.fr
+      : currentProject.description.en;
   };
 
   return (
     <>
-      <section className='projectContainer'>
-        <article className='projectContent'>
-          <div className='image'>
+      <section className="projectContainer">
+        <article className="projectContent">
+          <div className="image">
             <img src={currentProject.images[0].path} alt="Project image" />
           </div>
           <div className="proj-des">
@@ -37,9 +41,18 @@ export default function Project() {
             <h3>Compétences</h3>
           </div>
           <div className="proj-tech">
-            {currentProject.technologies.map((tech, index) => (
-              <img key={index} src={tech} alt={`Technology ${index + 1}`} />
-            ))}
+            <div className="allTechItems">
+              {currentProject.technologies.map((tech, index) => (
+                <div key={index}>
+                  <div className="tech-item">
+                    <img src={tech} alt={`Technology ${index + 1}`} />
+                    <div className="tech-text">
+                     <p> {projectData[Number(id) - 1].technologiesText[index]}</p>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
           <div className="proj-all-links">
             <div className="proj-linksTitle">
@@ -47,12 +60,20 @@ export default function Project() {
             </div>
             <div className="links">
               <div class="projGitLink">
-                <a href={currentProject.githubLink} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={currentProject.githubLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <i class="fa-brands fa-github"></i>
                 </a>
               </div>
               <div className="demo-link">
-                <a href={currentProject.liveDemoLink} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={currentProject.liveDemoLink}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <FontAwesomeIcon icon={faExternalLinkAlt} /> Live Demo
                 </a>
               </div>
