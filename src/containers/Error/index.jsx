@@ -1,7 +1,7 @@
 import "./index.css";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import ErrorImg from '../../assets/images/error-image.webp'
+import ErrorImage from '../../assets/images/error-image.webp'
 export default function Error() {
   const { t, i18n } = useTranslation();
 
@@ -23,7 +23,7 @@ export default function Error() {
         </div>
         <div className="errorSplitImg">
             <div className="errorImg">
-<img src={ErrorImg} alt="error-image"/>
+<img src={ErrorImage} alt="error-image"/>
             </div>
         </div>
       </div>
