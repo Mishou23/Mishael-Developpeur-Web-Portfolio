@@ -68,8 +68,16 @@
   font-size: 40px;
   color: #551a8b;
 }
+.demo-link{
+    display: flex;
+    gap: 10px;
+    align-items: baseline;
+}
 .demo-link a {
   text-decoration: none;
+  color: white;
+}
+.demo-link p {
   color: white;
 }
 .links {

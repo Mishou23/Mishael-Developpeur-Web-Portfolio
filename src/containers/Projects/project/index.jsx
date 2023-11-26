@@ -68,15 +68,16 @@ export default function Project() {
                   <i class="fa-brands fa-github"></i>
                 </a>
               </div>
-              <div className="demo-link">
-                <a
-                  href={currentProject.liveDemoLink}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <FontAwesomeIcon icon={faExternalLinkAlt} /> Live Demo
-                </a>
-              </div>
+              {currentProject.liveDemoLink && (
+  <div className="demo-link">
+    <a href={currentProject.liveDemoLink} target="_blank" rel="noopener noreferrer">
+      <FontAwesomeIcon icon={faExternalLinkAlt} />
+    
+    </a>
+   <p> Live Demo</p>
+  </div>
+)}
+
             </div>
           </div>
         </article>
