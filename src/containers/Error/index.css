@@ -39,3 +39,13 @@ span{
     width: 300px;
     height: auto;
 }
+@media (min-width: 350px) and (max-width: 768px) {
+.errorContent {
+    padding: 0px 0px;
+    flex-direction: column-reverse;
+}
+.errorImg img {
+    width: 200px;
+    height: auto;
+}
+}
