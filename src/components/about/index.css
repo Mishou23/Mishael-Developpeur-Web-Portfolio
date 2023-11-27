@@ -43,8 +43,8 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .aboutContainer {
-    padding: 0 20px; 
-    height: 50vh;
+    padding: 50px 20px; 
+    height: auto;
   }
 }
 
@@ -59,8 +59,8 @@
   }
 
   .aboutContainer {
-    padding: 0 15px; 
-    height: 50vh;
+    padding: 50px 15px; 
+    height: auto;
   }
 
   .about-title h2 {
