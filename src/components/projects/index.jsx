@@ -10,7 +10,7 @@ export default function Projects() {
     <section className="projectContainer" id="portfolio">
       <div className="all-proj-content">
         <div className="title">
-          <h2>{t('ProjectTitle')}</h2>
+          <h2>{t("ProjectTitle")}</h2>
         </div>
         <section className="all-projects">
           <div className="project">

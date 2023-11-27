@@ -1,34 +1,39 @@
-.contactHomeContain{
-    height: 40vh;
-    background-color: #fffbf7;
+.contactHomeContain {
+  height: 40vh;
+  background-color: #fffbf7;
 }
-.contactHomeContent{
-    padding: 0 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    height: 100%;
+.contactHomeContent {
+  padding: 0 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
 }
-.titleContact{
-    color: #ff2079;
-    font-size: 20px;
-    padding-bottom: 15px;
-    font-family: "Expletus Sans";
+.titleContact {
+  color: #ff2079;
+  font-size: 20px;
+  padding-bottom: 15px;
+  font-family: "Expletus Sans";
 }
-.contactLink{
-    display: inline-block;
-    text-decoration: underline;
-    color: #ff2079;
+.contactLink {
+  display: inline-block;
+  text-decoration: underline;
+  color: #ff2079;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
-    .contactHomeContain{
-        height: 25vh;
-    }
+  .contactHomeContain {
+    height: 25vh;
+  }
 }
 @media (min-width: 350px) and (max-width: 768px) {
-    .contactHomeContain{
-        height: 25vh;
-    }
-        .contactHomeContent{
-            padding: 0 15px;}
-    }
+  .contactHomeContain {
+    height: 25vh;
+  }
+  .contactHomeContent {
+    padding: 0 15px;
+  }
+  .titleContact {
+    color: #ff2079;
+    font-size: 13px;
+  }
+}

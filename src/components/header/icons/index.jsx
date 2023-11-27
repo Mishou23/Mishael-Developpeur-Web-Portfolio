@@ -1,21 +1,23 @@
-import React from 'react';
-import './style.css';
+import React from "react";
+import "./style.css";
 // Import the SVGs
-import HtmlIcon from '../../../assets/svg/html.svg';
-import CssIcon from '../../../assets/svg/css.svg';
-import JsIcon from '../../../assets/svg/js.svg';
-import NodeJsIcon from '../../../assets/svg/nodejs.svg';
-import ReactIcon from '../../../assets/svg/reactjs.svg';
-import SassIcon from '../../../assets/svg/sass.svg';
-import ReduxIcon from '../../../assets/svg/redux.svg';
+import HtmlIcon from "../../../assets/svg/html.svg";
+import CssIcon from "../../../assets/svg/css.svg";
+import JsIcon from "../../../assets/svg/js.svg";
+import NodeJsIcon from "../../../assets/svg/nodejs.svg";
+import ReactIcon from "../../../assets/svg/reactjs.svg";
+import SassIcon from "../../../assets/svg/sass.svg";
+import ReduxIcon from "../../../assets/svg/redux.svg";
 
 export default function Icons() {
   return (
-    <div className='Tech-container'>
-      <div className='title'>
-        <p>Technologies <span>|</span></p>
+    <div className="Tech-container">
+      <div className="title">
+        <p>
+          Technologies <span>|</span>
+        </p>
       </div>
-      <div className='all-icons'>
+      <div className="all-icons">
         <div className="icon">
           <img src={HtmlIcon} alt="HTML" />
         </div>

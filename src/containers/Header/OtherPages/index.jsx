@@ -14,13 +14,14 @@ export default function PageHeader({ hideVideo }) {
   const [scrollOpacity, setScrollOpacity] = useState(0.9);
 
   // Find the project based on the id parameter
-  const currentProject = projectData.find((project) => String(project.id) === id);
+  const currentProject = projectData.find(
+    (project) => String(project.id) === id
+  );
 
   // Extract the language and page name from the URL
-  const [, language, page] = location.pathname.split('/');
+  const [, language, page] = location.pathname.split("/");
 
-  
-  const pageTitleKey = page || "defaultTitle"; 
+  const pageTitleKey = page || "defaultTitle";
   const pageTitle = t(pageTitleKey);
 
   useEffect(() => {
@@ -41,7 +42,7 @@ export default function PageHeader({ hideVideo }) {
     <>
       <Navbar />
       <div className="container">
-        <div className="pageTitle" >
+        <div className="pageTitle">
           <h1>{pageTitle}</h1>
         </div>
         {currentProject && (
@@ -53,7 +54,13 @@ export default function PageHeader({ hideVideo }) {
           />
         )}
         {!hideVideo && (
-          <video autoPlay muted loop className="video-bg" style={{ opacity: scrollOpacity }}>
+          <video
+            autoPlay
+            muted
+            loop
+            className="video-bg"
+            style={{ opacity: scrollOpacity }}
+          >
             <source src={Video} type="video/mp4" />
             Your browser does not support the video tag.
           </video>

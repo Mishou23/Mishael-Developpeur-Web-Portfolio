@@ -1,11 +1,12 @@
 import React from "react";
-import Header from "../../containers/Header/HomePage/index";
+import Header from "../../containers/Header/homepage/index";
 import AboutMe from "../../components/about";
 import Projects from "../../components/projects/index";
 import HomeContact from "../../components/contact/index";
 import Footer from "../../components/footer/index";
 import video from "../../assets/video/AI.mp4";
 import "./index.css";
+
 export default function Home() {
   return (
     <>
@@ -16,8 +17,8 @@ export default function Home() {
         <HomeContact />
       </main>
       <footer>
-        <Footer/>
-        </footer>
+        <Footer />
+      </footer>
     </>
   );
 }

@@ -1,10 +1,10 @@
-import React, { useState, useRef } from 'react';
-import { Link } from 'react-router-dom';
-import { useTranslation } from 'react-i18next';
-import './style.css';
+import React, { useState, useRef } from "react";
+import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
+import "./style.css";
 
 const ImageSlider = ({ projects }) => {
-  const [currentSlide, setCurrentSlide] = useState(1); 
+  const [currentSlide, setCurrentSlide] = useState(1);
   const [dragStart, setDragStart] = useState(0);
   const sliderRef = useRef(null);
   const { i18n } = useTranslation();
@@ -60,8 +60,12 @@ const ImageSlider = ({ projects }) => {
         {projects.map((project, index) => (
           <Link
             key={project.id}
-            to={`/${i18n.language}/${project.title.replace(/\s+/g, '-')}/${project.id}`}
-            className={`slide-item ${index + 1 === currentSlide ? 'active' : ''}`}
+            to={`/${i18n.language}/${project.title.replace(/\s+/g, "-")}/${
+              project.id
+            }`}
+            className={`slide-item ${
+              index + 1 === currentSlide ? "active" : ""
+            }`}
           >
             <p className="image-title">{project.title}</p>
             <img

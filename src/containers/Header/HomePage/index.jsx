@@ -39,7 +39,7 @@ export default function Header({ disableIntro, video }) {
         </video>
 
         {/* Fade-out overlay */}
-        <div className={`fade-out ${scrollOpacity < 0.1 ? 'hide' : ''}`} />
+        <div className={`fade-out ${scrollOpacity < 0.1 ? "hide" : ""}`} />
 
         {!disableIntro && <Intro />}
       </section>

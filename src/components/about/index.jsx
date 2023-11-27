@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import Coding from "../../assets/images/web_developer.jpg";
+import Coding from "../../assets/images/web_developer.webp";
 import "./index.css";
 
 export default function AboutMe() {
@@ -18,9 +18,14 @@ export default function AboutMe() {
             <p>
               {t("AboutText")}
               {t("c'est")}
-              <Link to={`/${i18n.language}/${
+              <Link
+                to={`/${i18n.language}/${
                   i18n.language === "fr" ? "a-propos" : "about-me"
-                }`}>{t("ClickHere")}</Link> !
+                }`}
+              >
+                {t("ClickHere")}
+              </Link>{" "}
+              !
             </p>
           </div>
         </article>

@@ -57,22 +57,28 @@ export default function Navbar() {
       <div className="container-nav">
         <div className="nav-menu">
           <div className="imageContainer">
-          <Link
-                  to={`/${i18n.language}/${
-                    i18n.language === "fr" ? "accueil" : "home"
-                  }`}
-                >
-                   <img src={Logo} alt="Logo" />
-                </Link>
+            <Link
+              to={`/${i18n.language}/${
+                i18n.language === "fr" ? "accueil" : "home"
+              }`}
+            >
+              <img src={Logo} alt="Logo" />
+            </Link>
           </div>
           <div className="menuContainer">
             <div
-              className={`menu-btn ${isMenuOpen ? "activation-smart-menu" : ""}`}
+              className={`menu-btn ${
+                isMenuOpen ? "activation-smart-menu" : ""
+              }`}
               onClick={handleMenuClick}
             ></div>
           </div>
         </div>
-        <div className={`navigation-items ${isMenuOpen ? "activation-smart-menu" : ""}`}>
+        <div
+          className={`navigation-items ${
+            isMenuOpen ? "activation-smart-menu" : ""
+          }`}
+        >
           <ul className={isMenuOpen ? "show-menu" : ""}>
             <li>
               <div>
@@ -118,10 +124,7 @@ export default function Navbar() {
                 </Link>
               </div>
             </li>
-            <li
-              className="translateEng"
-              onClick={() => changeLanguage("en")}
-            >
+            <li className="translateEng" onClick={() => changeLanguage("en")}>
               <span>
                 <img
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAt1BMVEWSmb66z+18msdig8La3u+tYX9IaLc7W7BagbmcUW+kqMr/q6n+//+hsNv/lIr/jIGMnNLJyOP9/fyQttT/wb3/////aWn+YWF5kNT0oqz0i4ueqtIZNJjhvt/8gn//WVr/6+rN1+o9RKZwgcMPJpX/VFT9UEn+RUX8Ozv2Ly+FGzdYZrfU1e/8LS/lQkG/mbVUX60AE231hHtcdMb0mp3qYFTFwNu3w9prcqSURGNDaaIUMX5FNW5wYt7AAAAAjklEQVR4AR3HNUJEMQCGwf+L8RR36ajR+1+CEuvRdd8kK9MNAiRQNgJmVDAt1yM6kSzYVJUsPNssAk5N7ZFKjVNFAY4co6TAOI+kyQm+LFUEBEKKzuWUNB7rSH/rSnvOulOGk+QlXTBqMIrfYX4tSe2nP3iRa/KNK7uTmWJ5a9+erZ3d+18od4ytiZdvZyuKWy8o3UpTVAAAAABJRU5ErkJggg=="
@@ -129,10 +132,7 @@ export default function Navbar() {
                 />
               </span>
             </li>
-            <li
-              className="translateFr"
-              onClick={() => changeLanguage("fr")}
-            >
+            <li className="translateFr" onClick={() => changeLanguage("fr")}>
               <span>
                 <img
                   src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAALCAMAAABBPP0LAAAAbFBMVEVzldTg4ODS0tLxDwDtAwDjAADD0uz39/fy8vL3k4nzgna4yOixwuXu7u7s6+zn5+fyd2rvcGPtZljYAABrjNCpvOHrWkxegsqfs93NAADpUUFRd8THAABBa7wnVbERRKa8vLyxsLCoqKigoKClCvcsAAAAXklEQVR4AS3JxUEAQQAEwZo13Mk/R9w5/7UERJCIGIgj5qfRJZEpPyNfCgJTjMR1eRRnJiExFJz5Mf1PokWr/UztIjRGQ3V486u0HO55m634U6dMcf0RNPfkVCTvKjO16xHA8miowAAAAABJRU5ErkJggg=="

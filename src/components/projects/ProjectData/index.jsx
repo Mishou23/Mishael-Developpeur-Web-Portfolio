@@ -1,10 +1,10 @@
-import PortfolioArchitecte from "../../../assets/images/Portfolio_Sophie.jpg";
-import KasaProjectHousing from "../../../assets/images/Kasa_Project_Housing.jpeg";
+import PortfolioArchitecte from "../../../assets/images/Portfolio_Sophie.webp";
+import KasaProjectHousing from "../../../assets/images/Kasa_Project_Housing.webp";
 import ArgentBank from "../../../assets/images/ArgentBank_Login.png";
-import Booki from "../../../assets/images/Booki_agency.jpg";
-import Ohmyfood from "../../../assets/images/Ohmyfood.jpg";
-import Portfolio_photograph from "../../../assets/images/Portfolio_photograph.png";
-import Events from "../../../assets/images/724Events.png";
+import Booki from "../../../assets/images/Booki_agency.webp";
+import Ohmyfood from "../../../assets/images/Ohmyfood.webp";
+import Portfolio_photograph from "../../../assets/images/Portfolio_photograph.webp";
+import Events from "../../../assets/images/724Events.webp";
 import HTML from "../../../assets/svg/html.svg";
 import CSS from "../../../assets/svg/css.svg";
 import JS from "../../../assets/svg/js.svg";
@@ -37,7 +37,7 @@ const projectData = [
       fr: "Ce projet consiste à la découverte du framework React et de la gestion des routes avec React-router en intégrant les maquettes figma qui sont fournies. Les annonces de logements proviennent d'un fichier JSON.",
     },
     githubLink: "https://github.com/Mishou23/OpenClassroomProject8",
-    liveDemoLink: "",
+    liveDemoLink: "https://projet-kasa-on98.onrender.com",
     images: [{ path: KasaProjectHousing, title: "Kasa Project Housing" }],
     technologies: [REACT, SASS],
     technologiesText: ["React", "SASS"],
@@ -63,7 +63,7 @@ const projectData = [
       fr: "Booki est un projet réalisé dans le cadre de ma formation de Développeur Web chez OpenClassrooms. J'ai travaillé à partir d'une maquette fournie pour intégrer la page d'accueil d'une agence de voyage fictive en utilisant les technologies HTML et CSS. J'ai pris en compte les principes de conception adaptative pour assurer une expérience utilisateur optimale sur tous les types d'appareils (mobiles, tablettes, ordinateurs de bureau). Booki est un exemple de mon expertise en matière d'intégration web.",
     },
     githubLink: "https://github.com/Mishou23/OpenclassroomProject3",
-    liveDemoLink: "",
+    liveDemoLink: "https://mishou23.github.io/OpenclassroomProject3/",
     images: [{ path: Booki, title: "Booki Agency" }],
     technologies: [HTML, CSS],
     technologiesText: ["HTML", "CSS"],
@@ -92,8 +92,7 @@ const projectData = [
     liveDemoLink: "https://mishou23.github.io/OpenclassroomProject9/",
     images: [{ path: Portfolio_photograph, title: "Portfolio Photograph" }],
     technologies: [HTML, JS, CSS],
-    technologiesText: ["HTML", "JS", "CSS"]
-
+    technologiesText: ["HTML", "JS", "CSS"],
   },
   {
     id: 7,
@@ -103,11 +102,10 @@ const projectData = [
       fr: "Le projet 724 Events, dont j'ai assuré le débogage, se distingue par son engagement envers la qualité, mettant en œuvre des méthodes avancées pour garantir la fiabilité de l'application. J'ai utilisé Jest pour effectuer des tests approfondis sur chaque composant, assurant ainsi une validation systématique des fonctionnalités. L'intégration de points d'arrêt a été une stratégie clé que j'ai employée pour simplifier la détection et la résolution des problèmes, en me permettant d'inspecter l'état de l'application à des moments cruciaux. Les React Dev Tools ont également été un outil précieux que j'ai utilisé pour obtenir une vue détaillée de la hiérarchie des composants, des propriétés et des états, facilitant ainsi le processus de débogage. En combinant ces méthodes, j'ai veillé à la robustesse et à la qualité du code, contribuant ainsi au succès de l'application 724 Events.",
     },
     githubLink: "https://github.com/Mishou23/OpenclassroomProject10",
-    liveDemoLink: "",
+    liveDemoLink: "https://seven24events.onrender.com",
     images: [{ path: Events, title: "724Events" }],
     technologies: [REACT, SASS],
-    technologiesText: ["React", "SASS"]
-
+    technologiesText: ["React", "SASS"],
   },
 ];
 

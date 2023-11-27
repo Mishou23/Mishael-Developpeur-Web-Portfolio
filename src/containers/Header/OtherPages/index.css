@@ -2,7 +2,6 @@
   overflow: hidden;
   height: auto;
   position: relative;
-
 }
 
 .video-bg {
@@ -31,7 +30,7 @@
   font-weight: bold;
   color: #ff2079;
   font-size: 36px;
-  font-family: 'Expletus-Sans';
+  font-family: "Expletus-Sans";
   text-transform: capitalize;
   white-space: nowrap;
   overflow: hidden;
@@ -41,10 +40,12 @@
 
 /* Animation */
 @keyframes typewriterLoop {
-  0%, 100% {
+  0%,
+  100% {
     width: 0em;
   }
-  25%, 75% {
+  25%,
+  75% {
     width: 100%;
   }
   100% {
@@ -62,21 +63,20 @@
 }
 
 @media screen and (max-width: 1024px) {
-.pageTitle{
-  font-size: 25px;
+  .pageTitle {
+    font-size: 25px;
+  }
 }
-
-} 
- @media screen and (max-width: 730px) {
-  .pageTitle{
+@media screen and (max-width: 730px) {
+  .pageTitle {
     font-size: 20px;
   }
 }
- @media screen and (max-width: 600px) {
-  .pageTitle{
+@media screen and (max-width: 600px) {
+  .pageTitle {
     font-size: 12px;
   }
   .projectContent {
     padding: 0px;
+  }
 }
- }

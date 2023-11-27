@@ -1,7 +1,7 @@
 import React from "react";
 import AboutMeContainer from "../../containers/Aboutme/index";
 import Header from "../../containers/Header/OtherPages/index";
-import Footer from '../../components/footer/index'
+import Footer from "../../components/footer/index";
 import "./index.css";
 
 export default function AboutMePage() {
@@ -12,8 +12,8 @@ export default function AboutMePage() {
         <AboutMeContainer />
       </main>
       <footer>
-        <Footer/>
-        </footer>
+        <Footer />
+      </footer>
     </>
   );
 }
