@@ -4,7 +4,7 @@ import Photo from "../../assets/images/myPhoto.webp";
 import Icons from "./icons/index";
 import "./index.css";
 
-export default function Intro() {
+const Intro = () => {
   const { t } = useTranslation();
 
   return (
@@ -13,11 +13,7 @@ export default function Intro() {
         <div className="introTitle">
           <h1>{t("IntroTitle")}</h1>
         </div>
-        <div
-          data-aos="fade-right"
-          data-aos-duration="1500"
-          className="intro-text"
-        >
+        <div data-aos="fade-right" data-aos-duration="1500" className="intro-text">
           <p>{t("IntroText")}</p>
         </div>
         <div className="icons-links">
@@ -43,8 +39,10 @@ export default function Intro() {
         <Icons />
       </div>
       <div className="myPhoto">
-        <img src={Photo} alt="web developer photo"></img>
+        <img src={Photo} alt="Web Developer Mishael Richardson"></img>
       </div>
     </div>
   );
-}
+};
+
+export default Intro;

@@ -5,14 +5,12 @@ import "./index.css";
 
 export default function Header({ disableIntro, video }) {
   const [scrollOpacity, setScrollOpacity] = useState(1);
-  const [videoOpacity, setVideoOpacity] = useState(1);
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
       const newOpacity = 1 - scrollPosition / 500; // Adjust 500 to control the scroll distance for the fade-out
       setScrollOpacity(newOpacity);
-      setVideoOpacity(newOpacity);
     };
 
     window.addEventListener("scroll", handleScroll);
@@ -32,16 +30,16 @@ export default function Header({ disableIntro, video }) {
           muted
           loop
           className="video-background"
-          style={{ opacity: videoOpacity }}
+          style={{ opacity: scrollOpacity }}
         >
           <source src={video} type="video/mp4" />
           Your browser does not support the video tag.
         </video>
 
         {/* Fade-out overlay */}
-        <div className={`fade-out ${scrollOpacity < 0.1 ? "hide" : ""}`} />
+        <div className={`fade-out ${scrollOpacity < 0.1 && "hide"}`} />
 
-        {!disableIntro && <Intro />}
+        {disableIntro || <Intro />}
       </section>
     </header>
   );
