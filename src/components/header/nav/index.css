@@ -26,7 +26,6 @@ nav {
 
 ul {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   margin: 0;
   padding: 0;
@@ -77,6 +76,7 @@ a:hover {
 
 .navigation-items {
   padding-right: 30px;
+  display: flex;
 }
 
 @media (min-width: 350px) and (max-width: 768px) {
@@ -133,6 +133,7 @@ a:hover {
   .nav-menu {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     width: 100%;
   }
 

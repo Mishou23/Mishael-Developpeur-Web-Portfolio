@@ -15,6 +15,7 @@ import Contact from "./pages/Contact/index";
 import Error from "./pages/ErrorPage/index";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import WebFont from 'webfontloader';
 import "./App.css";
 
 function App() {
@@ -26,7 +27,11 @@ function App() {
       easing: "ease-in-out",
       once: true,
     });
-
+    WebFont.load({
+      google: {
+        families: ['Orbitron', 'Expletus Sans']
+      }
+    });
     const handleScroll = () => {
       const scrollThreshold = 100;
       const isScrolled = window.scrollY > scrollThreshold;

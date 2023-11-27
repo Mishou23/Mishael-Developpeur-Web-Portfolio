@@ -52,13 +52,13 @@
   padding-left: 12px;
 }
 
-.icons-links a i {
+.icons-links a {
   font-size: 30px;
   color: #e92efb;
   transition: 2s ease-in;
 }
 
-.icons-links a i:hover {
+.icons-links a:hover {
   transform: scale(1.2);
   color: #ff2079;
   transition: 0.5s ease-out;

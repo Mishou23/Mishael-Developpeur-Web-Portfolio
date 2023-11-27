@@ -9,7 +9,7 @@ export default function Header({ disableIntro, video }) {
   useEffect(() => {
     const handleScroll = () => {
       const scrollPosition = window.scrollY;
-      const newOpacity = 1 - scrollPosition / 500; // Adjust 500 to control the scroll distance for the fade-out
+      const newOpacity = 1 - scrollPosition / 500; 
       setScrollOpacity(newOpacity);
     };
 

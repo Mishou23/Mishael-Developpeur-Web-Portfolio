@@ -1,11 +1,27 @@
+html,
+body {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
 
-html, body {
-    scroll-behavior: smooth;
-    box-sizing: border-box;
-  }
+@font-face {
+  font-family: "Orbitron";
+  src: local("Orbitron"),
+    url("/path/to/your/local/orbitron.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 
-body{
- background-color: #02021d;
+@font-face {
+  font-family: "Expletus Sans";
+  src: local("Expletus Sans"),
+    url("/path/to/your/local/expletus-sans.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: #02021d;
 }
 .btnScrollUp {
   position: fixed;
@@ -32,14 +48,13 @@ body{
 
 .scrollUp:before {
   content: "";
-    position: absolute;
-    top: 62%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-135deg);
-    border: solid 0px #fff;
-    border-width: 0 5px 5px 0px;
-    display: inline-block;
-    padding: 7px;
-    transition: transform 0.3s ease;
+  position: absolute;
+  top: 62%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-135deg);
+  border: solid 0px #fff;
+  border-width: 0 5px 5px 0px;
+  display: inline-block;
+  padding: 7px;
+  transition: transform 0.3s ease;
 }
-

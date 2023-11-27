@@ -4,6 +4,7 @@ import projectData from "../../../components/projects/ProjectData/index";
 import { faExternalLinkAlt } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslation } from "react-i18next";
+import { FaGithub } from 'react-icons/fa';
 import "./index.css";
 
 export default function Project() {
@@ -64,13 +65,13 @@ export default function Project() {
               <h3>{t("Link")}</h3>
             </div>
             <div className="links">
-              <div class="projGitLink">
+              <div className="projGitLink">
                 <a
                   href={currentProject.githubLink}
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i class="fa-brands fa-github"></i>
+                  <i><FaGithub /></i>
                 </a>
               </div>
               {currentProject.liveDemoLink && (

@@ -4,7 +4,7 @@
 }
 
 .projectsContent {
-  padding: 120px 100px;
+  padding: 50px 49px;
 }
 
 .project-item img {
@@ -13,11 +13,13 @@
 
 .project-group {
   display: grid;
+  padding: 72px 79px;
+  background-color: #fffbf7;
   grid-template-columns: repeat(
     auto-fit,
     minmax(300px, 1fr)
   ); 
-  grid-gap: 20px; 
+  grid-gap: 50px; 
   align-items: flex-start;
 }
 
@@ -35,6 +37,7 @@
 
 .projectImg-title {
   color: #ff2079;
+  padding-bottom: 10px;
 }
 
 .project-item a {
@@ -42,6 +45,10 @@
 }
 @media screen and (max-width: 1024px) {
   .projectsContent {
-    padding: 30px 20px;
+    padding: 0px;
+  }
+  .project-group {
+    display: grid;
+    padding: 70px 16px;
   }
 }

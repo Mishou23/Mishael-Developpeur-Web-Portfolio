@@ -1,5 +1,6 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import "./index.css";
 
 export default function Footer() {
@@ -30,7 +31,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa-brands fa-linkedin"></i>
+                  <FaLinkedin /> 
                 </a>
               </div>
               <div className="gitLink">
@@ -39,7 +40,7 @@ export default function Footer() {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <i className="fa-brands fa-github"></i>
+                  <FaGithub /> 
                 </a>
               </div>
             </div>

@@ -47,7 +47,6 @@
   color: white;
 }
 .proj-image img {
-  max-width: 93%;
   height: 458px;
   position: relative;
 }
@@ -82,10 +81,12 @@
   .projectContainer {
     padding: 50px 20px;
   }
+
   .proj-image img {
     max-width: 93%;
-    height: 330px;
+    height: 300px;
   }
+
   .title h2 {
     font-size: 25px;
   }
