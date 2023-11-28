@@ -15,7 +15,7 @@ export default function AllProjects() {
               <div key={project.id} className="project-item">
                 <Link
                   key={project.id}
-                  to={`/${i18n.language}/${project.title.replace(
+                  to={`https://developpeur-web-mishael-portfolio.onrender.com/${i18n.language}/${project.title.replace(
                     /\s+/g,
                     "-"
                   )}/${project.id}`}
