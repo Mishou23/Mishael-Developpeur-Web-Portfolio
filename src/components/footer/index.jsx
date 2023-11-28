@@ -10,7 +10,7 @@ export default function Footer() {
     const currentLanguage = location.pathname.split("/")[1];
     const currentPage = location.pathname.split("/")[2];
 
-    const newUrl = `https://developpeur-web-mishael-portfolio.onrender.com/${lng}/${currentPage}`;
+    const newUrl = `/${lng}/${currentPage}`;
 
     window.history.pushState({}, "", newUrl);
 

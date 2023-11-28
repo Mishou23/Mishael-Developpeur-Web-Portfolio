@@ -20,8 +20,8 @@ const Navbar = () => {
     const currentProjectId = location.pathname.split("/")[3];
 
     const newUrl = currentProjectId
-      ? `https://developpeur-web-mishael-portfolio.onrender.com/${lng}/${currentPage}/${currentProjectId}`
-      : `https://developpeur-web-mishael-portfolio.onrender.com/${lng}/${currentPage}`;
+      ? `/${lng}/${currentPage}/${currentProjectId}`
+      : `/${lng}/${currentPage}`;
 
     window.history.pushState({}, "", newUrl);
     navigate(newUrl);
@@ -58,7 +58,7 @@ const Navbar = () => {
         <div className="nav-menu">
           <div className="imageContainer">
             <Link
-              to={`https://developpeur-web-mishael-portfolio.onrender.com/${i18n.language}/${
+              to={`/${i18n.language}/${
                 i18n.language === "fr" ? "accueil" : "home"
               }`}
             >
@@ -85,25 +85,25 @@ const Navbar = () => {
         >
           <ul className={isMenuOpen ? "show-menu" : ""}>
             <NavItem
-              to={`https://developpeur-web-mishael-portfolio.onrender.com/${i18n.language}/${
+              to={`/${i18n.language}/${
                 i18n.language === "fr" ? "accueil" : "home"
               }`}
               label={t("Accueil")}
             />
             <NavItem
-              to={`https://developpeur-web-mishael-portfolio.onrender.com/${i18n.language}/${
+              to={`/${i18n.language}/${
                 i18n.language === "fr" ? "a-propos" : "about-me"
               }`}
               label={t("A propos")}
             />
             <NavItem
-              to={`https://developpeur-web-mishael-portfolio.onrender.com/${i18n.language}/${
+              to={`/${i18n.language}/${
                 i18n.language === "fr" ? "projets" : "projects"
               }`}
               label={t("Projets")}
             />
             <NavItem
-              to={`https://developpeur-web-mishael-portfolio.onrender.com/${i18n.language}/${
+              to={`/${i18n.language}/${
                 i18n.language === "fr" ? "contact" : "contact"
               }`}
               label={t("Contact")}

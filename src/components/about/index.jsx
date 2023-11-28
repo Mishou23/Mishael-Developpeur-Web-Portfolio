@@ -19,7 +19,7 @@ export default function AboutMe() {
               {t("AboutText")}
               {t("c'est")}
               <Link
-                to={`https://developpeur-web-mishael-portfolio.onrender.com/${i18n.language}/${
+                to={`/${i18n.language}/${
                   i18n.language === "fr" ? "a-propos" : "about-me"
                 }`}
               >

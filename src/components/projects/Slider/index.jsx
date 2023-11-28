@@ -28,7 +28,7 @@ const ImageSlider = ({ projects }) => {
         {projects.map((project, index) => (
           <Link
             key={project.id}
-            to={`https://developpeur-web-mishael-portfolio.onrender.com/${i18n.language}/${project.title.replace(/\s+/g, "-")}/${project.id}`}
+            to={`/${i18n.language}/${project.title.replace(/\s+/g, "-")}/${project.id}`}
             className={`slide-item ${index + 1 === currentSlide ? "active" : ""}`}
           >
             <p className="image-title">{project.title}</p>

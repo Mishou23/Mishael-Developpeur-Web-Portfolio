@@ -82,19 +82,19 @@ function App() {
     <Router>
       <div>
         <Routes>
-          <Route path="https://developpeur-web-mishael-portfolio.onrender.com/" element={<Home />} />
-          <Route path="https://developpeur-web-mishael-portfolio.onrender.com/:lang/accueil" element={<Home />} />
-          <Route path="https://developpeur-web-mishael-portfolio.onrender.com/:lang/home" element={<Home />} />
-          <Route path="https://developpeur-web-mishael-portfolio.onrender.com/:lang/a-propos" element={<AboutMe />} />
-          <Route path="https://developpeur-web-mishael-portfolio.onrender.com/:lang/about-me" element={<AboutMe />} />
-          <Route path="https://developpeur-web-mishael-portfolio.onrender.com/:lang/projets" element={<Projects />} />
-          <Route path="https://developpeur-web-mishael-portfolio.onrender.com/:lang/projects" element={<Projects />} />
-          <Route path="https://developpeur-web-mishael-portfolio.onrender.com/:lang/:title/:id" element={<Project />} />
-          <Route path="https://developpeur-web-mishael-portfolio.onrender.com/:lang/contact" element={<Contact />} />
-          <Route path="https://developpeur-web-mishael-portfolio.onrender.com/:lang/contact" element={<Contact />} />
-          <Route path="https://developpeur-web-mishael-portfolio.onrender.com/:lang/error" element={<Error />} />
-          <Route path="https://developpeur-web-mishael-portfolio.onrender.com/fr/error" element={<Error />} />
-          <Route path="*" element={<Navigate to="https://developpeur-web-mishael-portfolio.onrender.com//fr/error" />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/:lang/accueil" element={<Home />} />
+          <Route path="/:lang/home" element={<Home />} />
+          <Route path="/:lang/a-propos" element={<AboutMe />} />
+          <Route path="/:lang/about-me" element={<AboutMe />} />
+          <Route path="/:lang/projets" element={<Projects />} />
+          <Route path="/:lang/projects" element={<Projects />} />
+          <Route path="/:lang/:title/:id" element={<Project />} />
+          <Route path="/:lang/contact" element={<Contact />} />
+          <Route path="/:lang/contact" element={<Contact />} />
+          <Route path="/:lang/error" element={<Error />} />
+          <Route path="/fr/error" element={<Error />} />
+          <Route path="*" element={<Navigate to="/fr/error" />} />
         </Routes>
         <div className={`btnScrollUp ${showScrollUp ? "" : "hidden"}`}>
           <div className="scrollUp"></div>

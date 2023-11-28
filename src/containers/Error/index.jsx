@@ -18,7 +18,7 @@ export default function Error() {
           <div className="errorBtn">
             <Link
               className="error"
-              to={`https://developpeur-web-mishael-portfolio.onrender.com//${i18n.language}/${
+              to={`/${i18n.language}/${
                 i18n.language === "fr" ? "accueil" : "home"
               }`}
             >
