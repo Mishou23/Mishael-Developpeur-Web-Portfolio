@@ -1,7 +1,7 @@
 import "./index.css";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
-import ErrorImage from "../../assets/images/error-image.webp";
+import ErrorImage from "../../assets/images/Error-image.webp";
 export default function Error() {
   const { t, i18n } = useTranslation();
 
