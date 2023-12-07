@@ -1,25 +1,24 @@
-import React, { useState } from "react";
+import React from "react";
 import { useForm, ValidationError } from "@formspree/react";
-import { useTranslation } from "react-i18next";
+import { useTranslation } from "react-i18next";  // Import useTranslation
 import "./index.css";
 
 const ContactForm = () => {
-  const { t } = useTranslation();
-  const [state, handleSubmit] = useForm("xoqbglbg", {
-    dangerouslyDisableSubmits: () =>
-      state && (state.submitting || state.succeeded),
-    onSubmit: (values) => {
-      // Callback function after successful form submission
-      console.log("Form values submitted:", values);
-      // You can add additional logic or make API calls here
-     
-    },
-  });
+  const { t } = useTranslation();  // Initialize useTranslation
+
+  const [state, handleSubmit] = useForm("xoqbglbg");
+
+  const handleFormSubmit = async (e) => {
+    await handleSubmit(e);
+    console.log("Form values submitted:", state.values);
+    console.log("Message Envoyé");
+    window.location.reload();
+  };
 
   return (
     <section className="contactContainer">
       <div className="contactContent">
-        <form onSubmit={handleSubmit} className="form">
+        <form onSubmit={handleFormSubmit} className="form">
           <div className="contactText">
             <p>{t("contactMessage")}</p>
           </div>
