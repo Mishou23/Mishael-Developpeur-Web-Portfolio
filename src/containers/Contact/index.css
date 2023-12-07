@@ -40,8 +40,11 @@ label {
   padding: 2px 0px;
 }
 textarea {
-  padding: 75px 0;
+  box-sizing: border-box;
+  padding: 15px 15px;
+  height: 40vh;
 }
+
 .field input[type] {
   padding-bottom: 10px;
 }

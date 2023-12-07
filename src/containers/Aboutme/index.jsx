@@ -1,7 +1,7 @@
 import React from "react";
 import { useTranslation } from "react-i18next";
 import Photo from "../../assets/images/web_developer.webp";
-import CV from "../../assets/cv/Mishael_Dev_CV.pdf";
+import CV from "../../assets/cv/CV_Richardson_Mishael_Developpeur_Web_FrontEnd.pdf";
 import "./style.css";
 
 export default function AboutMeContainer() {
